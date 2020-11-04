@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>WaiSiuKei&#39;s blog</title>
+  <icon>https://www.gravatar.com/avatar/222938e11d3439e2c42cef252769edf8</icon>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://waisiukei.github.io/"/>
+  <updated>2020-11-01T14:52:01.833Z</updated>
+  <id>https://waisiukei.github.io/</id>
+  
+  <author>
+    <name>WaiSiuKei</name>
+    <email>wakiki@outlook.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>最近一年的工作</title>
+    <link href="https://waisiukei.github.io/2020-10-26/"/>
+    <id>https://waisiukei.github.io/2020-10-26/</id>
+    <published>2020-10-26T14:30:38.000Z</published>
+    <updated>2020-11-01T14:52:01.833Z</updated>
+    
+    <content type="html"><![CDATA[<p>时隔一年没有更新了，想把最近一年的事情记录吐槽一下。<br>我是在去年八月加入 G 公司的一个小团队，担任打杂万金油的角色，复杂构建、架构、攻坚预研等。我对这样的工作内容挺满意的，因为不需要对接业务开发，每天上班时很少人来找我；而且因为我在远程在深圳 office 支援 厦门团队的工作，所以日常交流形式主要是钉钉和视频会议。这样的「自闭」式开发体验，可能别人看起来会有点苦闷，但是我会乐在其中，我的听力问题就不太会影响工作。</p><h2 id="去年底"><a href="#去年底" class="headerlink" title="去年底"></a>去年底</h2><p>去年10月到年底时，我主要在研究可视化网页编辑器的原型。这个编辑器会提供的能力是：将解析后的 PSD 作品通过拖拽几下就能得到一个响应式网页。因为 Leader 希望延续使用旧的技术路线，即复用平面编辑器的代码，所以我只能很别扭地在一个平面编辑器上基于 Yoga-Layout 去实现一个响应式布局引擎；原本写在 CSS 里面的内容，需要用 JSON 去描述。这个技术上也不太难，所以 DEMO 很快就能弄出。</p><p>除了这个，我还被分派去预研营销小游戏，比如抽奖页面，的一些技术；Leader 点名了几个技术，比如 WebRTC、ServerLess 等，然后就埋头研究去了。</p><h2 id="今年初"><a href="#今年初" class="headerlink" title="今年初"></a>今年初</h2><p>在年初时，公司原有规划因为疫情的出现而有些变动。导致团队方向很久还没定下来。那时候我也比较闲，人闲下来就会想得比较多；所以那时候的我是比较焦虑的，为未来工作而担忧。</p><p>我那时抓住的救命稻草是 Draw.io 开源的流程图编辑器。按照我往常的做法，每次遇到用 ES5 写成的代码，我都喜欢改写成 T。这次也不例外，所以就把大部分代码改写了，也能正常运行。不过研究下去后，这个流程图编辑器太多领域特定的业务代码了。我也没有意向往这个小众领域发展，所以就浅尝即止。</p><h2 id="年中以来"><a href="#年中以来" class="headerlink" title="年中以来"></a>年中以来</h2><p>后来团队的发展方向定了，需要做一个网页编辑器，我就去写了这个网页编辑器的大部分代码——包括核心部分、UI 组件、整体页面等。后来有一位同事加入支援，所以就由他负责前端部分，我去写后端。</p><p>这是我第一次去正经去写后端代码，虽然它只是个大型 Hello World，不过我也接触了很多后端代码开发的知识。</p><h2 id="最近"><a href="#最近" class="headerlink" title="最近"></a>最近</h2><p>最近 Leader 找来了一个新活，我们去年谈到的互动项目可以启动了，所以一年前对 LeadCloud 游戏 SDK 的研究结果能用上了。</p><p>LeanCloud 的后端服务和部分游戏服务规格不能满足我们业务要求，所以我需要根据 LeanCloud SDK 接口去实现一个 API 兼容的后端服务。由于之前有所研究，而且也有些后端经验，我两周就完成了这个服务；简单的测试是倒是挺容易通过，不过对于这个用于管理 WebSocket 链接的 Broker 类型的服务来说，并发下会有很多考验。我还需要了解更多后端知识来保证服务的安全运行。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;时隔一年没有更新了，想把最近一年的事情记录吐槽一下。&lt;br&gt;我是在去年八月加入 G 公司的一个小团队，担任打杂万金油的角色，复杂构建、架构、攻坚预研等。我对这样的工作内容挺满意的，因为不需要对接业务开发，每天上班时很少人来找我；而且因为我在远程在深圳 office 支援 厦
+      
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="https://waisiukei.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>最近一年的个人研究</title>
+    <link href="https://waisiukei.github.io/2020-11-1/"/>
+    <id>https://waisiukei.github.io/2020-11-1/</id>
+    <published>2020-10-26T14:30:38.000Z</published>
+    <updated>2020-11-01T15:56:53.357Z</updated>
+    
+    <content type="html"><![CDATA[<p>这一年来，由于工作原因，我接触的技术有</p><ul><li>Yoga-Layout: RN 的布局引擎。</li><li>WebRTC: Leader 想推，但是在现实网络情况下不太实用的方案。</li><li>阿里云函数计算：一种 Serverless 方案，开发体验说不上便利。</li><li>EggJS: 阿里的后端框架、用起来确实挺方便的，可以抛下成见去试一下。</li></ul><p>上面的都是因为工作原因而去研究的。在业余，我主要是研究了这几项：</p><h2 id="流程图编辑器"><a href="#流程图编辑器" class="headerlink" title="流程图编辑器"></a>流程图编辑器</h2><p>Draw.io 提供了在线流程图编辑器，而且开源了他们的代码。出于技术崇拜和好奇，我研究了他们的代码。</p><p>他们的是用 ES5 写的，对于这样的代码，我都喜欢改成 TS 进行研究。所以就埋头弄了几个月，将他们改写完，而且也能正常地跑起来。</p><p>不过这并没有给我带来太多喜悦，他们的编辑器代码是在有太多和流程图编辑相关的业务代码。如果把这样的代码都清理掉，剩下的架子并没有太多价值。所以我尝试去写一个自己的编辑器框架。</p><p>公司现在是有一个核心编辑器，其他业务可以用它来进行扩展。不过这个编辑器的代码扩展性是在太差了，在代码体积上来说，多其他业务是一种负担。所以我根据在这时研究了一个基于 TS 的框架，参考了 VSCode 代码做了一下全部 class 都能注入覆盖的设计。</p><p>这套 class 注入系统是我的研究成果；虽然他没有机会发挥，也没能在公司实际业务中去落地，不过以后应该有机会的吧。</p><h2 id="CSS-广告编辑器"><a href="#CSS-广告编辑器" class="headerlink" title="CSS 广告编辑器"></a>CSS 广告编辑器</h2><p>这个广告编辑器是我在网页编辑器弄完之后的空余时间里研究的。国外有些「古典」的 GIF 小广告，所以这样的广告编辑器可能会有些需求。出于给团队找活的目的，我就自己研究了一下。</p><p>这样的编辑器实现起来应该不难，我们团队的 H5 编辑器改一下应该就能做成。但是对于隔壁组提供的核心编辑器的厌恶。我想写一个 100% 可控的编辑器。</p><p>因为之前有写 Canvas 和动画经验，我就用以前的代码改写了一下，最后挺简单地就能兼容别人家的数据结构、实现动画播放。而且比起原来的编辑器，还实现了时间轴的 Seek 功能。</p><p>这个研究很快就结束，因为可能前景不佳。</p><h2 id="视频编码和-FFMPEG-和-WASM"><a href="#视频编码和-FFMPEG-和-WASM" class="headerlink" title="视频编码和 FFMPEG 和 WASM"></a>视频编码和 FFMPEG 和 WASM</h2><p>有个新闻是某个在线编辑网站拿了挺多风投，公司也开始在视频编辑方向发力。虽然我不是视频组的，但是多媒体相关的技术都没有研究过。</p><p>我从零了解了容器格式、编码格式这些基础内容，也编译了个 FFMPEG 的 WASM 版本用于播放 H.265 编码的视频。我甚至想去了解 MP4 的 SPE。不过出于实用角度考虑，需要为一个有商业价值的产品去研究技术。</p><p>我想到的是 LogRocket 那样的操作录屏，通过前端截图去完成记录用户操作。通过 HTML2Canvas 去做前端截图，然后用视频编码技术去压缩传输。不过考虑到 HTML2Canvas 和前端视频编码都效率不佳，就放弃了。</p><h2 id="JS-沙箱"><a href="#JS-沙箱" class="headerlink" title="JS 沙箱"></a>JS 沙箱</h2><p>我入职 G 公司之后就开始做插件机制；但是插件并没有运行在沙箱，而且直接在主线程运行，所以会有安全问题。</p><p>最近公司的前端基建团队讨论了微前端方案，还有就是阅读了 Figma 的技术 Blog，我现在开始研究 QuickJS VM 打包成 WASM，然后配合类似 WorkerDOM 的设施完成一个安全的 JS 沙箱。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;这一年来，由于工作原因，我接触的技术有&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Yoga-Layout: RN 的布局引擎。&lt;/li&gt;
+&lt;li&gt;WebRTC: Leader 想推，但是在现实网络情况下不太实用的方案。&lt;/li&gt;
+&lt;li&gt;阿里云函数计算：一种 Serverless 方案，开
+      
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="https://waisiukei.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>从上周遇到的 CORS 问题说起</title>
+    <link href="https://waisiukei.github.io/cors/"/>
+    <id>https://waisiukei.github.io/cors/</id>
+    <published>2019-10-20T07:38:47.000Z</published>
+    <updated>2020-10-26T14:08:58.476Z</updated>
+    
+    <content type="html"><![CDATA[<p>数了一下，已经有两个月没写了，这份工作入职后就在忙着工作的事情和自己的 Side Project, 所以之前那种为了写而写的文章，就没有太多愿望去写。但是在上周工作中，遇到一些事情，还是想记录一下。</p><p>我上周在做一些 URL 迁移的工作，就是把前端页面的地址从<code>a.b.com</code>改成<code>b.com/a</code>, 代码改动也算顺利；但是这个改动会涉及公司的其他系统，所以有一些跨团队协调配合的工作。其中，和某团队的同事干脆面（化名）的合作，是令我比较尴尬的。</p><p>在公司，有三套环境可以用来发布上线，测试、预发、生产。我在一开始，就把这次需要的改动写下来，告诉其他同事如何配合。这位干脆面在测试环境的改动也算顺利，不过发现了一个不是由于这次改动产生的 400 错误，本着负责任的态度，我也积极配合解决问题。这个问题呢，我那边也能复现，然后一顿操作完，又没了，我们双方都没能再次重现，然后把它当作后端问题没管。</p><p>到了预发环境，这个问题还是存在，而且因为干脆面访问我们页面没有使用 https，我硬编码了请求的 BaseURL 出现了 CORS 问题，然后他就语气急了。</p><p>我刚开始时没想到是 Https , 被追问后没有想到原因，所以感到压力。我现在相当于 Remote 工作，算是一个可有可无的边缘角色，内心是有点慌的。然后就不加辨别地找了其他同事，问了些低级问题。</p><p>冷静下来后，我重新看了一下 W3C 的文档， <a href="https://www.w3.org/TR/cors/#resource-preflight-requests" target="_blank" rel="noopener">https://www.w3.org/TR/cors/#resource-preflight-requests</a>, 发现我对 CORS 还停留在水过鸭背的阶段，遇到问题就忘了背过的知识点，对自己有点失望。</p><p>不过工作还得继续，总结经验让以后的路更好走吧：</p><ul><li>别被同事的情绪影响</li><li>遇到问题先分析，别急着回复，宁愿慢也不要出错</li><li>继续深入研究，做个可靠的专家</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;数了一下，已经有两个月没写了，这份工作入职后就在忙着工作的事情和自己的 Side Project, 所以之前那种为了写而写的文章，就没有太多愿望去写。但是在上周工作中，遇到一些事情，还是想记录一下。&lt;/p&gt;
+&lt;p&gt;我上周在做一些 URL 迁移的工作，就是把前端页面的地址从&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="https://waisiukei.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>键盘入坑记</title>
+    <link href="https://waisiukei.github.io/choosing-new-keyboard/"/>
+    <id>https://waisiukei.github.io/choosing-new-keyboard/</id>
+    <published>2019-08-18T03:48:14.000Z</published>
+    <updated>2020-10-26T14:08:58.476Z</updated>
+    
+    <content type="html"><![CDATA[<p>公司给前端配的是 13’ MBP，每天都得低头使用，所以我打算买个笔记本支架把它架起来，然后外接键盘和鼠标使用。这次需要把笔记本抬高，选了一款完全脱离桌面的支架。有的同事是使用斜面很高的支架，然后手掌要在倾斜 45 度的斜面上输入；我试了一下，这样的手掌姿势不太舒服，所以没选这种。</p><p>我之前用的都是旧款 15’ MBP, 旧款的蝶式键盘用起来挺适合我，家里用了几年的 XPS 的键盘也挺好用，所以并没有使用外接键盘的习惯。我上一次使用外置键盘，是高中时用家里的台式机，从大学以后就在使用蝶式键盘，有点习惯了这种键程超短、比较省力的键盘。</p><p>很多人会选 HHKB 来配 MBP, 看起来逼格满满。但是我不喜欢背 Vim 的快捷键，也不习惯没有方向键的键盘，还是不要装比较好，不然连怎样退出 Vim 都得上 SO 去问，太尴尬了。HHKB 的颜值倒是不错，可以参考一下，选键盘要按键数往低里选。</p><p>然后我找到 FILCO minila air 67, 这款 67 键的键盘有方向键，颜值也比较高，虽然自带的绿色空格键比较丑，不过可以自己换键。这是一款机械键盘，提供青轴、茶轴、红轴等版本。第一次接触这些轴，有点懵，上知乎学习一下。了解它们的特性后，考虑到现在办公室静得诡异的气氛、连新款 MBP 的键盘觉得响，有点不敢买。后来在厦门体验旁边的同事使用红轴 IKBC, 确实声音挺响的。</p><p>最后我选的是一款国产静电容键盘。静电容键盘比较有名的是 HHKB 和 Realforce，但是 HHKB 没有方向键；而 Realforce 实在是贵得下不了手。作为第一把键盘，选错和弃坑的可能性很高，没必要一开始就投入重金。有的人还会先使用试轴器确定适合自己的键轴后，才选适合自己的键盘。这种选购方式挺好的，可是我要买的键盘没有试轴器，只能凭想象去选。我按现在的使用习惯，首先考虑敲击省力。NiZ 提供了 40g 压力和 35g 压力两种版本，感觉差不多，选了一个低的数值；键盘布局有66、82、87、104几种，需求点是要有方向键、键数少，排除66和104键。82和87对比，87的更便宜，但是听说由于键的尺寸问题，换键会比较麻烦，最后选了价高的82键盘。</p><p>拿到手后感觉压力数选少了，一个按键动作，抬起手指要比按下按键要费劲。还有是，使用了蝶式键盘这么多年，感觉键盘的键程有点高，需要重新适应一下。键盘的底盘比较高，我买了块木质的手托，这样手掌就不容易蹭到最下面一排的按键。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;公司给前端配的是 13’ MBP，每天都得低头使用，所以我打算买个笔记本支架把它架起来，然后外接键盘和鼠标使用。这次需要把笔记本抬高，选了一款完全脱离桌面的支架。有的同事是使用斜面很高的支架，然后手掌要在倾斜 45 度的斜面上输入；我试了一下，这样的手掌姿势不太舒服，所以没
+      
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="https://waisiukei.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>图表的 Scale</title>
+    <link href="https://waisiukei.github.io/scale-of-chart/"/>
+    <id>https://waisiukei.github.io/scale-of-chart/</id>
+    <published>2019-08-04T05:07:18.000Z</published>
+    <updated>2020-10-26T14:08:58.477Z</updated>
+    
+    <content type="html"><![CDATA[<p>Scale 是图表的核心部分，它用于数据和显示的相互映射，数据点绘图位置需要用 Scale 确定，从画布的位置反过来获取对应位置的的数据点，也需要 Scale。Scale 通常是实现了如下的接口:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">interface IScale &#123;</span><br><span class="line">  domain: [number, number]</span><br><span class="line">  range: [number, number]</span><br><span class="line">  toDomain(rangeValue: number): number</span><br><span class="line">  toRange(domainValue: number): number</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>domain 是原始数据的范围，如同函数<code>f(x) = y</code>，domain 相当于 x 的取值范围，即定义域；range 相当于函数的输出范围，即值域，在显示时就是 canvas 画图的坐标范围。比如将一组<code>[1, 2, 3, 4, 5, 6]</code>的数据映射到画布的<code>[0, 50]</code>范围，我们可以说，domain 是<code>[1, 6]</code>, range 是<code>[0, 50]</code>。</p><p>将上面这组数据进行绘图时，要用到<code>toRange</code>方法，如果 Scale 是线性的，<code>f(domain)= range = A * domain + B</code> 中，A = 10, B = -10, 对于每一个 domain 的输入值，其输出是：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">f(domain)= 10 * domain - 10 = range</span><br><span class="line">f(1) = 0</span><br><span class="line">f(2) = 10</span><br><span class="line">f(3) = 20</span><br><span class="line">f(4) = 50</span><br><span class="line">f(5) = 40</span><br><span class="line">f(6) = 50</span><br></pre></td></tr></table></figure><p>这是<code>toRange</code>的计算。相应地，<code>toDomain</code>的计算是：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">f(domain)= 10 * domain - 10 = range</span><br><span class="line">g(range) = 0.1 * range + 1</span><br><span class="line">g(0) = 1</span><br><span class="line">g(10) = 2</span><br><span class="line">g(20) = 3</span><br><span class="line">g(30) = 4</span><br><span class="line">g(40) = 5</span><br><span class="line">g(50) = 6</span><br></pre></td></tr></table></figure><p>这样就完成了线性映射。现在图表里只用到了线性映射，假如要做 Log Scale 功能，就要参考一下  <code>d3</code> 的实现。</p><h2 id="平移"><a href="#平移" class="headerlink" title="平移"></a>平移</h2><p>在平移时，range 的范围并没有发生变化，需要变化的 domain，假如画布需要向右移动 10px，原有的画布范围是 50px 宽，显示的是 domain = <code>[1, 6]</code>, <code>f(domain) = 10 * domain - 10</code>, 在平移后，<code>f(domain) = 10 * domain</code>。这时，如果要显示 range = 0 的点，需要 domain = 0；如果需要显示 range = 50 的点，需要domain = 5。所以新的domain = <code>[0, 5]</code>。</p><p>另一种计算方法是</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">f(domain) = 10 * domain = range</span><br><span class="line">g(range) = 0.1 * range = domain</span><br></pre></td></tr></table></figure><p>得到</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">g(0) = 0.1 * 0 = 0</span><br><span class="line">g(50) = 0.1 * 5 = 5</span><br></pre></td></tr></table></figure><p>和上面的分析方法相同。</p><h2 id="缩放"><a href="#缩放" class="headerlink" title="缩放"></a>缩放</h2><p>在平移时，range 的范围并没有发生变化，需要变化的 domain。假如需要画图当大一倍，中心点是 25px，则：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">对于原来的domian, 在放大后</span><br><span class="line">f&apos;(range) = (range - 25) * 0.5 + 25</span><br><span class="line">f‘(0）= 12.5</span><br><span class="line">f&apos;(50) = 37.5</span><br><span class="line">只显示原来在[12.5, 37.5]的range区间的domain值</span><br><span class="line">因为f(domain) = 10 * domain - 10</span><br><span class="line">即 g(range) = 0.1 * range + 1 = domain</span><br><span class="line">g(12.5) = 2.25</span><br><span class="line">g(37.5) = 4.75</span><br></pre></td></tr></table></figure><p>所以在放大后，domain 变为<code>[2.25, 4.75]</code>，只需要 2.25 到 4.75 的值，就能填满画布。</p><p>放大一倍要乘以 0.5，可以理解为固定 domain ，将显示的窗口作倒数倍数变化；比如放大一倍，相当于显示原来的一半区域就满足要求。</p><h2 id="改变画布大小"><a href="#改变画布大小" class="headerlink" title="改变画布大小"></a>改变画布大小</h2><p>改变画布大小时，range 的范围作等量的变化。比如画布增加 50px ，那么新的 range 为<code>[0, 100]</code>。</p><p>对于 domain 有两种处理方式，一种是 domain 不变，必然地各个点之间的距离变大，出现拉伸效果。<br>另一种处理是，domain 也跟随变化，保持显示比例。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">因为f(domain) = 10 * domain - 10</span><br><span class="line">即 g(range) = 0.1 * range + 1 = domain</span><br><span class="line">g(0) = 1</span><br><span class="line">g(100) = 11</span><br></pre></td></tr></table></figure><p>所以 domain 范围变为<code>[1, 11]</code></p><p>上述计算结果中，domain 的取值可能为负数，这里的正负并没有太大意义。在实际应用中，比如<code>@antv/g2</code>，会将 domain 和 range 归一化处理。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Scale 是图表的核心部分，它用于数据和显示的相互映射，数据点绘图位置需要用 Scale 确定，从画布的位置反过来获取对应位置的的数据点，也需要 Scale。Scale 通常是实现了如下的接口:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;t
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://waisiukei.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>记一次在V2EX的回帖经历</title>
+    <link href="https://waisiukei.github.io/a-post-on-v2ex/"/>
+    <id>https://waisiukei.github.io/a-post-on-v2ex/</id>
+    <published>2019-07-21T07:01:36.000Z</published>
+    <updated>2020-10-26T14:08:58.475Z</updated>
+    
+    <content type="html"><![CDATA[<p>这是发生在一个多月前的事情，某天中午我在V2上看到有人问JS里toFixed的返回值问题，<a href="https://www.v2ex.com/t/571061" target="_blank" rel="noopener">这里</a>。我在之前稍微看过ECMAScript的Spec，所以对这个问题有点了解，所以就随便回复了一下需要查Spec。但是回复的走向并没有想象中的学术展开，反而是有人引用了道听途说的资料，做了误导性的回答。我只好把自己吞下的知识，“反刍”出来喂给他们吃。</p><p>看到这样的情景，我觉得有点无奈，那是，当碰到知识盲区时，得到的回答不一定是正确的答案。</p><p>我也算有自知之明，知道自己的技术知识体系并不严密，所以会想着去补充完善。但受限于各种因素，平时都只能功利性地去学习零碎的知识、看一些所谓的文章。刚开始时还有点新鲜感，但是看多了就会觉得千篇一律。它们的套路都差不过，对他人的文章排列组合一下，又能水一篇。这样的松鼠病患者撰出来的文，是不是只为了满足收集癖？我自己也在Blog里写些不太上得了门面的博文，出于对“松鼠文”的厌恶，所以写的都是自己经历过的项目里的事情、自己求证过的知识。但是呢，市面上还有很多收集站，专门做一些二手文章转载的事情，作者不详、写作时间不详。若是鉴别能力稍差，很容易以深信了里面写的内容；正确的还好，要是错了就贻笑大方了。</p><p>可能是S1上得多，我的“冷无缺”纯度越来越高了。其中的“无信仰”特质，使我不会在短时间内去信任网上的内容。缺德网友可以因为各种原因发表各种大胆言论，但是这边的我应该是谨慎判断、或者无视。一个例子是B站的弹幕，多少无常识言论在那里，一条错的弹幕，舆论风向还得反转两次才扭过来。我的网络生活，很大一部分时间是在看各种文章，也许是精彩的独见，也许是隔夜的呕吐物，也可能是我没发现的毒药。在逻辑求证上，我也只是个不太高明的初心者。刚接触一本书，叫做《批判性思维工具》，好像可以读一下。</p><p>PS:写这篇是为了督促自己看书🙃。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;这是发生在一个多月前的事情，某天中午我在V2上看到有人问JS里toFixed的返回值问题，&lt;a href=&quot;https://www.v2ex.com/t/571061&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;这里&lt;/a&gt;。我在之前稍微看过ECMASc
+      
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="https://waisiukei.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我不知道的前端知识-kepler.gl的近大远小轮播</title>
+    <link href="https://waisiukei.github.io/f12-1/"/>
+    <id>https://waisiukei.github.io/f12-1/</id>
+    <published>2019-07-14T11:29:28.000Z</published>
+    <updated>2020-10-26T14:08:58.476Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天访问了kepler.gl这个网站，看到它的轮播挺有意思，就研究了一下。轮播已经是个old school的话题，做移动端页面或者做官网的同学，应该是熟得不能再熟的技能，但是我这两个都没做过，所以有点好奇。<br>首先，页面上这个轮播，有个初始化过程。轮播的图都是叠合状态，当页面滚动到它的区域时，聚焦到中间顺序的图，左右的图稍微露出一部分，且会有一个从视觉上向后方运动的过程。<br>这个动画里，视觉上的远近效果，主要是用了CSS Transform 3D 的perspective(透视)函数，具体用法参考<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/perspective" target="_blank" rel="noopener">MDN</a>;除了perspective，Transform里还用了translate3d，比如聚焦的图，Z会比较高，而作为背景的图，Z依次递减。<br>组件的初始化，其实和图片懒加载使用了相同的技术，就是监测Element是否进入Viewport，当Element进入后，做相应的处理，改变样式或者加载图片。这个交互的监测，有挺多LazyLoading/ScrollLoading的插件，原理是页面目前的位置和元素的位置进行比较；或者使用ntersection Observer API。kepler.gl是基于React的，可能用了React-Reveal，后者是两种方法都兼容。<br>前面的方法，可以有两种实现方式。一是获取页面绝对的滚动值和元素相对于page的绝对位置，通过遍历元素parent，累加offetTop；另外一种是获取element.getBoundingClientRect()里的top值，如果大于0且小于window.innerHeight，则是在viewport里全部或者部分显示。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;今天访问了kepler.gl这个网站，看到它的轮播挺有意思，就研究了一下。轮播已经是个old school的话题，做移动端页面或者做官网的同学，应该是熟得不能再熟的技能，但是我这两个都没做过，所以有点好奇。&lt;br&gt;首先，页面上这个轮播，有个初始化过程。轮播的图都是叠合状态，
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://waisiukei.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mindmap 挑战</title>
+    <link href="https://waisiukei.github.io/mindmap-challenge/"/>
+    <id>https://waisiukei.github.io/mindmap-challenge/</id>
+    <published>2019-06-16T03:48:56.000Z</published>
+    <updated>2020-10-26T14:08:58.477Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近在V2看到XMind的招聘信息，然后就突发奇想，想试一下自己写一个Mindmap。</p><p>为了防止闭门造车，我先在Github上找找可以借鉴的项目，比较有名的是百度脑图Kityminder。Kityminder是由几个部分组成：底层处理SVG的Kity、核心逻辑部分Kityminder-core、外面的Kityminder-editor等。</p><p>我花了点时间研究Kity，发现Kityminder里面只用到Kity很小的部分，当初我写Canvas图表前，倒是花了很多功夫写Canvas绘图库；对比之下用SVG的话，的确省事很多。然后Kityminder-core这个项目里，核心的layout逻辑也只是很少的一部分。Kityminder太多不想看的代码。</p><p>然后找到Antv的hierarchy，这个repo是只做Mindmap layout的，给出了经典的layout几种变形。我读了一下，其中的基本思路是树遍历。它适合输入数据然后输出图像的模式，不是我想要那种，在交互时动态更新显示的模式。</p><p>所以我开始自己写。刚开始时，凭直觉地写了巨大一个Node类，这个类既有model数据，也有view数据，还有很多很多方法。这样写倒是能工作，写layout算法时也很方便。不过代码的确太暴力了，需要分离model和view的数据。</p><p>在写Canvas图表时，我是有把源数据和变换后显示用到的数据分离，只是Canvas绘图区域可以一次清理后重新绘制；而SVG还有一个view数据和DOM节点绑定的问题，像@antv/hierarchy，它的demo就是直接用canvas绘制，没有给出和DOM节点结合的方案。我暂时是采用MVC而不是MVVM的思路（不知道该怎样划分View和View model）把数据分离为model的数据和view的数据。Model是树状结构，view也是树状结构；但是DOM节点不是树状结构，每一个节点都是容器元素的子元素。</p><p>Model节点和view的节点该如何关联？我开始想了用ID的方案，通过在树中遍历出节点来达到双向映射。但是这方案看是来太慢了（虽然没测过benchmark）。后面想的是，Map可以用Object作为key，可以用Map来存节点的关联关系；如果需要考虑浏览器兼容性时，可以降级为用ID为key。想象一下，两个’A’字母叠在一起，上面的’A’各个顶点都对应着下面的顶点，这就是我需要的数据结构。这个方案的好处是，不需要在暴露给用户的类里带上太多和内部实现相关的数据和方法。比如用户在使用时，有这样的代码：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> map = <span class="keyword">new</span> Mindmap(<span class="built_in">document</span>.getElementById(<span class="string">'container'</span>));</span><br><span class="line"><span class="keyword">let</span> topic = <span class="keyword">new</span> Topic();</span><br><span class="line">map.addTopic(topic);</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> subTopic1 = <span class="keyword">new</span> Topic();</span><br><span class="line">map.addTopic(subTopic1, topic);</span><br></pre></td></tr></table></figure></p><p>里面的Topic类里，只要求实现ITopic接口：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">interface ITopic &#123;</span><br><span class="line">    parent: ITopic | null</span><br><span class="line">    children: ITopic[]</span><br><span class="line">    content: any</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>这样，设计处理的API会简洁很多，用法也很清晰。</p><p>就如同上面的例子，我的Mindmap API设计上适合动态添加/删除节点。在内部实现里是，节点有改动时，依次影响的是自身尺寸、自身连同后代节点的总体大小、兄弟节点的位置、父节点的总体大小等。这个过程连续向上，直至根节点。这样的更新逻辑还能再优化，响应更快。</p><p>在实现节点渲染时，我使用了SVG的<code>&lt;foreignObject&gt;</code>，然后里面渲染普通的DOM节点，如<code>&lt;textarea&gt;</code>。我试过把这些节点用普通地挂在一个div下渲染，用CSS Transform, 然后连线用SVG，效果挺好速度也很快；但是看了有些文章，里面提到这种混合不太适合SVG导出，才改为全用SVG，缺点就是Mindmap节点渲染起来慢很多，所以我需要使用上面的按需更新策略。</p><p>最后这个Demo还需要加上快捷键，我抽取了VSCode快捷键绑定相关的代码来使用，现实了和XMind一样的快捷键。最后完成的代码看<a href="https://github.com/WaiSiuKei/fin/tree/master/examples/mindmap" target="_blank" rel="noopener">这个</a>。这个还是简单的，接下来我想把它做成Coggle那种可以在节点进行富文本编辑的形式，而不是单行输入 + Image + Marker + URL 这种，不过面对富文本大魔王，还需要更多准备。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;最近在V2看到XMind的招聘信息，然后就突发奇想，想试一下自己写一个Mindmap。&lt;/p&gt;
+&lt;p&gt;为了防止闭门造车，我先在Github上找找可以借鉴的项目，比较有名的是百度脑图Kityminder。Kityminder是由几个部分组成：底层处理SVG的Kity、核心逻辑
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://waisiukei.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript内存泄漏</title>
+    <link href="https://waisiukei.github.io/debugging-memory-leak/"/>
+    <id>https://waisiukei.github.io/debugging-memory-leak/</id>
+    <published>2019-06-10T13:11:17.000Z</published>
+    <updated>2020-10-26T14:08:58.476Z</updated>
+    
+    <content type="html"><![CDATA[<p>我之前在写的图表应用，写的时候没太注意内存问题，后来在项目里以库的方式引入时，发现会有些内存占用不断升高的问题，就是所谓的内存泄漏了。</p><p>一般提到内存泄漏，都会想起 C 的野指针问题，堆里动态分配的内存区域没有释放，在程序运行期间不对消耗可用内存。JavaScript 没有指针，但是也有“无用的”对象占用内存，出现类似的“内存泄漏问题”。我在平时接触到的，会有如下几类：</p><ul><li>对象赋值到全部变量。使用在<code>&lt;script&gt;</code>标签里面未声明的对象，会赋值为全局变量的属性，或者是编程者刻意赋值的。</li><li>单例对象持有的其他对象的引用。有时程序运行期间需要一些单例，例如一些Register，或者依赖注入容器，在程序结束后，需要注意回收。</li><li>回调。这里的回调不是指DOM Event Listener, 有些旧文章会提到旧浏览器绑定事件后需要解绑，现代浏览器里已经不需要操心这个；这里说的是<code>Eventemitter.on(event, cb)</code>这种事件回调，或者其他以函数作为参数的地方，如果持有了函数的引用，需要注意对称的释放处理。</li></ul><p>还有其他一些例子，它们的特点都是与闭包有关，引用在逻辑结束后没用清理。这些问题有时可以通过静态检查查找出来，比如全局变量，有on没有off。静态检查力不能及的时候，需要运行一下代码，通过开发者工具查找问题。</p><p>Chrome 的开发者工具里有一项“Memory”, 它可以用于调试对内存区域的问题，它提供的了几项功能里，我用得最多的是Heap Snapshot/堆快照。比方说，一个应用运行时，堆内存占用可能有多有少，但总体占用的均线是水平线，如果有泄漏的情况，往往会是阶梯式上升。</p><p>发现出现泄漏时，需要定位泄漏的对象，我习惯在进行UI操作前后分别录一次堆快照，然后使用”Object allocated between Snapshot1 and Snapshot2”这样的filter，看看两次快照之间的差异，列表里的对象会构造函数分类，很多实例也会看到代码位置，code review后通常可以发现上面说的几个问题。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;我之前在写的图表应用，写的时候没太注意内存问题，后来在项目里以库的方式引入时，发现会有些内存占用不断升高的问题，就是所谓的内存泄漏了。&lt;/p&gt;
+&lt;p&gt;一般提到内存泄漏，都会想起 C 的野指针问题，堆里动态分配的内存区域没有释放，在程序运行期间不对消耗可用内存。JavaScr
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://waisiukei.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Monorepo研究</title>
+    <link href="https://waisiukei.github.io/setup-monorepo/"/>
+    <id>https://waisiukei.github.io/setup-monorepo/</id>
+    <published>2019-05-30T03:17:09.000Z</published>
+    <updated>2020-10-26T14:08:58.477Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Monorepo"><a href="#Monorepo" class="headerlink" title="Monorepo"></a>Monorepo</h1><p>共享代码管理有很多种形式，有分仓库分项目的做法、Git Submodules、把全部代码集中在一个代码仓库的方式。后面一种代码组织形式称为Monorepo，它提倡的是，开发团队应将代码放到一个repo里，而不是去维护不同的repo。<br>假设一种场景，两个模块之间的接口需要修改，如果采用多仓库的形式，需要经过的步骤是：修改被依赖的仓库、发布更新、下游仓库更新依赖进行开发、更新发布等；如果采用monorepo，可以做到开发时同时修改，然后同时发布新版本。<br>当然优势的地方也有很多，很多文章也有介绍，比如<a href="https://pspdfkit.com/blog/2019/benefits-of-a-monorepo/" target="_blank" rel="noopener">这个</a>。</p><h1 id="Lerna"><a href="#Lerna" class="headerlink" title="Lerna"></a>Lerna</h1><p>Monorepo很早就有项目进行实践，比如React, 然后Lerna的流行，出现了更多Monorepo。<br>Lerna的自我介绍是</p><blockquote><p>A tool for managing JavaScript projects with multiple packages.</p></blockquote><p>它把各个模块称为package，并且定义了这么代码组织结构，<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">lerna-repo/</span><br><span class="line">  package.json</span><br><span class="line">  packages/</span><br><span class="line">    package-1/</span><br><span class="line">      package.json</span><br><span class="line">    package-2/</span><br><span class="line">      package.json</span><br></pre></td></tr></table></figure></p><p>👆的package都放到一个叫做packages的目录里，当然这个目录可以是其他名字，也可以有多个这类目录。然后Lerna可以提供各种方便的功能，比如👇几个：</p><h3 id="bootstrap命令"><a href="#bootstrap命令" class="headerlink" title="bootstrap命令"></a>bootstrap命令</h3><p>建立这个的目录结构后，首先运行<code>lerna bootstrap</code>命令，安装各个pkg的依赖。与在各个pkg目录手动安装不同，<code>bootstrap</code>命令会把公共命令link到同一处，达到节省资源到目标。</p><h3 id="build命令"><a href="#build命令" class="headerlink" title="build命令"></a>build命令</h3><p><code>lerna bootstrap</code>命令会对各个pkg进行构建。如果各个pkg之前存在依赖关系，它们之间的关系会形成有向图，Lerna会进行拓扑排序，得到一个打包顺序结果，按这个顺序逐一构建。</p><h3 id="version命令"><a href="#version命令" class="headerlink" title="version命令"></a>version命令</h3><p>项目里面的pkg可以采用独立版本号和统一版本号两种版本号管理形式。采用独立版本号时，需要手动对每个包的版本号进行升级管理；采用统一版本号时，<code>lerna version</code>命令可以帮助执行版本号更新和release。项目大了还是采用统一版本方便，避免各个版本间潜在的不兼容。</p><h1 id="Typescript-Path-mapping"><a href="#Typescript-Path-mapping" class="headerlink" title="Typescript Path mapping"></a>Typescript Path mapping</h1><p>刚开始尝试Monorepo时，我参考了一些用了Lerna地项目, 建立类似地目录结构，然后手动到各个目录运行<code>npm install</code>，然后用Typescript开发。我的各个模块会有相互依赖，查了一下Typescript文档，找到了模块寻找相关的<a href="https://www.typescriptlang.org/docs/handbook/module-resolution.html" target="_blank" rel="noopener">文章</a>。它提到了Path mapping，可以把指定第三方依赖寻找的目录。</p><h1 id="NPM-local-paths和NPM-link"><a href="#NPM-local-paths和NPM-link" class="headerlink" title="NPM local paths和NPM link"></a>NPM local paths和NPM link</h1><p>NPM的<a href="https://docs.npmjs.com/files/package.json#local-paths" target="_blank" rel="noopener">local paths</a>功能提供一种指定本地目录作为依赖的功能，适合本地开发，如果发布为NPM包会有问题，用户电脑上不一定有一样的目录结构。类似的功能是<code>npm link</code>, 这个也是<strong>只</strong>适合本地开发，而且在monorepo下要一个一个手动执行。</p><h1 id="Webpack-alias"><a href="#Webpack-alias" class="headerlink" title="Webpack alias"></a>Webpack alias</h1><p>Webpack配置选项里的resolve有个alias属性，可以指定路径的别名，Monorepo里如果有webpack构建的内容时，还需要手动指定这一项。</p><h1 id="Yarn-workspace"><a href="#Yarn-workspace" class="headerlink" title="Yarn workspace"></a>Yarn workspace</h1><p>我在开发自己的monorepo时，Typescript Path mapping基本够用，但是因为定义文件生成工具<a href="https://github.com/timocov/dts-bundle-generator" target="_blank" rel="noopener">dts-bundle-generator</a>在处理依赖项时，如果不是定义在package.json的话，它会把其他模块的内容内联。<br>解决方案是Yarn workspace，它提供了把各个模块link到上一级依赖目录的功能。按照Node.js模块寻找规则，本级目录下的node_modules不存在的话，Node.js会查找上一级目录里的node_modules目录，一路往上直至用户文件夹。这个symbol link可以在开发时，被依赖模块更新代码后，依赖的模块可以无感地继续开发，不用关注依赖更新问题；Yarn workspace可以自动workspace下的多个目录，比起手动一个一个运行<code>npm link</code>会方便很多；各个模块的package.json适合发布到NPM，不会有NPM local paths的问题。Lerna和Yarn workspace可以叠加使用。</p><h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>在搭建自己的monorepo时，试过👆全都方案，最后确定的是：目录按Lerna和Yarn workspace配置、然后运行<code>lerna bootstrap</code>安装依赖。<br>期间还有些开发时遇到的问题：</p><h2 id="WebStorm的坑"><a href="#WebStorm的坑" class="headerlink" title="WebStorm的坑"></a>WebStorm的坑</h2><p>WebStorm里面使用的Typescript compiler会有些问题，比如在某个模块里遇到的错误:</p><blockquote><p>Error:TS6053: File ‘/Users/wei/fin/packages/linkedlist/node_modules/typescript/lib/lib.dom.d.ts’ not found.</p></blockquote><p>解决这个是，在workspace root安装Typescript，即使Yarn不提倡这样做。</p><blockquote><p>error Running this command will add the dependency to the workspace root rather than the workspace itself, which might not be what you want - if you really meant it, make it explicit by running this command again with the -W flag (or –ignore-workspace-root-check).<br>info Visit <a href="https://yarnpkg.com/en/docs/cli/add" target="_blank" rel="noopener">https://yarnpkg.com/en/docs/cli/add</a> for documentation about this command.</p></blockquote><h2 id="dts-bundle-generator的坑"><a href="#dts-bundle-generator的坑" class="headerlink" title="dts-bundle-generator的坑"></a>dts-bundle-generator的坑</h2><p>dts-bundle-generator即使按上面的 Lerna + Yarn workspace 搭建后，还会出现声明内联的情况，试了好久，加了Path mapping倒是可以解决问题，但是不太好，因为在使用Path mapping时，WebStrom的自动import太傻，如果里面有自身目录，同一模块下个两个文件间import，居然不是使用相对路径，而是<code>pkg-name/src/path/to/file</code>，这样的形式。<br>更新一下，给作者提了<a href="https://github.com/timocov/dts-bundle-generator/issues/91" target="_blank" rel="noopener">Issue</a>后，作者给出一个用来处理这种情况的配置项，所以Path mapping可以去掉。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Monorepo&quot;&gt;&lt;a href=&quot;#Monorepo&quot; class=&quot;headerlink&quot; title=&quot;Monorepo&quot;&gt;&lt;/a&gt;Monorepo&lt;/h1&gt;&lt;p&gt;共享代码管理有很多种形式，有分仓库分项目的做法、Git Submodules、把全部代码集中
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://waisiukei.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>键盘输入事件</title>
+    <link href="https://waisiukei.github.io/keyboardevent/"/>
+    <id>https://waisiukei.github.io/keyboardevent/</id>
+    <published>2019-05-27T06:35:01.000Z</published>
+    <updated>2020-10-26T14:08:58.477Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="事件类型"><a href="#事件类型" class="headerlink" title="事件类型"></a>事件类型</h1><p>接触过的键盘事件（KeyboardEvent）有keydown、keyup、keypress：</p><ul><li>keydown：任意按键按下后。</li><li>*keypress：当一个键按下，且这个键产生一个字符值时，浏览器才会发送keypress事件。比如字母键、数字键，标点符号；Alt, Shift, Ctrl这些键敲击后不会有keypress事件。</li><li>keyup： 任意按键释放后。</li></ul><p>keydown/keyup适合用来用来处理键盘敲击事件。keypress适合用来处理内容输入事件。查一下最新的<a href="https://w3c.github.io/uievents/#legacy-keyboardevent-events" target="_blank" rel="noopener">Draft</a>, keypress已经算是legacy了，要替换为beforeinput和input。</p><h1 id="输入识别"><a href="#输入识别" class="headerlink" title="输入识别"></a>输入识别</h1><p>先来看看KeyboardEvent的接口定义（源自lib.dom.d.ts）：<br><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> KeyboardEvent <span class="keyword">extends</span> UIEvent &#123;</span><br><span class="line">    readonly altKey: <span class="built_in">boolean</span>;</span><br><span class="line">    <span class="comment">/** @deprecated */</span></span><br><span class="line">    char: <span class="built_in">string</span>;</span><br><span class="line">    <span class="comment">/** @deprecated */</span></span><br><span class="line">    readonly charCode: <span class="built_in">number</span>;</span><br><span class="line">    readonly code: <span class="built_in">string</span>;</span><br><span class="line">    readonly ctrlKey: <span class="built_in">boolean</span>;</span><br><span class="line">    readonly key: <span class="built_in">string</span>;</span><br><span class="line">    <span class="comment">/** @deprecated */</span></span><br><span class="line">    readonly keyCode: <span class="built_in">number</span>;</span><br><span class="line">    readonly location: <span class="built_in">number</span>;</span><br><span class="line">    readonly metaKey: <span class="built_in">boolean</span>;</span><br><span class="line">    readonly repeat: <span class="built_in">boolean</span>;</span><br><span class="line">    readonly shiftKey: <span class="built_in">boolean</span>;</span><br><span class="line">    <span class="comment">/** @deprecated */</span></span><br><span class="line">    readonly which: <span class="built_in">number</span>;</span><br><span class="line">    getModifierState(keyArg: <span class="built_in">string</span>): <span class="built_in">boolean</span>;</span><br><span class="line">    <span class="comment">/** @deprecated */</span></span><br><span class="line">    initKeyboardEvent(typeArg: <span class="built_in">string</span>, canBubbleArg: <span class="built_in">boolean</span>, cancelableArg: <span class="built_in">boolean</span>, viewArg: Window, keyArg: <span class="built_in">string</span>, locationArg: <span class="built_in">number</span>, modifiersListArg: <span class="built_in">string</span>, repeat: <span class="built_in">boolean</span>, locale: <span class="built_in">string</span>): <span class="built_in">void</span>;</span><br><span class="line">    readonly DOM_KEY_LOCATION_JOYSTICK: <span class="built_in">number</span>;</span><br><span class="line">    readonly DOM_KEY_LOCATION_LEFT: <span class="built_in">number</span>;</span><br><span class="line">    readonly DOM_KEY_LOCATION_MOBILE: <span class="built_in">number</span>;</span><br><span class="line">    readonly DOM_KEY_LOCATION_NUMPAD: <span class="built_in">number</span>;</span><br><span class="line">    readonly DOM_KEY_LOCATION_RIGHT: <span class="built_in">number</span>;</span><br><span class="line">    readonly DOM_KEY_LOCATION_STANDARD: <span class="built_in">number</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>其中和输入键识别有关的是char、charCode、code、key、keycode、which。keyCode, charCode和which已经废弃，原因是：</p><blockquote><p>In practice, keyCode and charCode are inconsistent across platforms and even the same implementation on different operating systems or using different localizations.</p></blockquote><p><a href="https://www.w3.org/TR/uievents/#interface-keyboardevent" target="_blank" rel="noopener">https://www.w3.org/TR/uievents/#interface-keyboardevent</a></p><p>现在提倡使用key和code。code属性是代码物理按键的标识。而key属性的值有两种情况：</p><ul><li>A key string that corresponds to the character typed by the user, taking into account the user’s current locale setting, modifier state, and any system-level keyboard mapping overrides that are in effect.</li><li><p>A named key attribute value，比如<code>Alt</code>, <code>ArrowDown</code>这些，参考<a href="https://www.w3.org/TR/uievents-key/#named-key-attribute-values" target="_blank" rel="noopener">https://www.w3.org/TR/uievents-key/#named-key-attribute-values</a>。</p><p>比如单纯按下a键, keydown会是<code>{ key: &#39;a&#39;, code: &#39;keyA&#39; }</code>。</p><p>比较麻烦的是和modifier一起按下，hold住Alt再按下a键时，keydown会是<code>{ key: &#39;å&#39;, code: &#39;keyA&#39; }</code>。</p><p>更加麻烦的是，切换到中文输入法下，输入<code>啊</code>这个字，一般的顺序是a然后空格，事件顺序是:</p></li></ul><table><thead><tr><th></th><th>event</th><th>keycode</th><th>key</th><th>code</th></tr></thead><tbody><tr><td>1</td><td>keydown</td><td>229</td><td>a</td><td>KeyA</td></tr><tr><td>2</td><td>keyup</td><td>65</td><td>a</td><td>KeyA</td></tr><tr><td>3</td><td>keydown</td><td>229</td><td>空</td><td>Space</td></tr><tr><td>4</td><td>keyup</td><td>32</td><td>空</td><td>Space</td></tr></tbody></table><p>keydown出现一个keycode=229的神秘代码，这是一个经典问题。这时keypress事件是不会发送的，想要获得中文输入值，需要处理InputEvent。</p><p>（👆的表格，我是在<a href="https://w3c.github.io/uievents/tools/key-event-viewer.html" target="_blank" rel="noopener">https://w3c.github.io/uievents/tools/key-event-viewer.html</a>里测试后得到的）</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;事件类型&quot;&gt;&lt;a href=&quot;#事件类型&quot; class=&quot;headerlink&quot; title=&quot;事件类型&quot;&gt;&lt;/a&gt;事件类型&lt;/h1&gt;&lt;p&gt;接触过的键盘事件（KeyboardEvent）有keydown、keyup、keypress：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;k
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://waisiukei.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>转行4年</title>
+    <link href="https://waisiukei.github.io/career-changed-4-years/"/>
+    <id>https://waisiukei.github.io/career-changed-4-years/</id>
+    <published>2019-05-26T08:55:01.000Z</published>
+    <updated>2020-10-26T14:08:58.475Z</updated>
+    
+    <content type="html"><![CDATA[<p>五月，是个特别的月份，承载了很多特别的回忆，这个月有生日纪念日、也有失恋纪念日。其中5月18日，是我转行IT的日子。</p><h2 id="入行前"><a href="#入行前" class="headerlink" title="入行前"></a>入行前</h2><p>时间回到2015年，我还在KXXXXl时，我还在做着类似画图机器的重复工作。我和大学室友一起校招进入这个公司，但是他一个月跑回本行，做电气设计。我不知道下一步怎么，只是凭着兴趣，用着大学自学的Python写些图纸处理的小程序。<br>那家公司的业务是，承接母公司的脏活，做些没什么技术含量的画图工作。我那时做得最多的部分，是叫Cable Routing，描述在船上连接设备的电缆的布线，工作输出内容是各个电缆架的断面图图纸。工作流程是电缆架断面编号、统计各条电缆经过的断面到一份Excel表格、画每个编号的断面图。这里面最后一部分的工作，是很无聊的，具体就是在一个<code>|______|</code>形状上堆代表电缆的圈圈。<br>那时用的制图软件是AutoCAD，可以做一些二次开发，不过用的是Lisp。我没用过Lisp，那时懂点语法的语言是C/Processing/Python，因为大学时用PyQt写过一个小软件，所以打算用Python写个帮助工作的小软件。<br>画图时，好像是要在Excel使用Filter筛选出电缆编号、查电缆类型、查电缆直径、画圈圈~~。后面的工作会在每个编号重复，真是浪费生命，所以我第一个版本做的，是一个把电缆的图形数据直接弄到剪贴板的小软件，里面设计AutoCAD文件格式、系统剪贴板处理这些内容。<br>这个小软件出来，得到部门Leader的赞赏和同事们的认可，我挺开心的，继续下一步。在第二版，做了一个读取Excel，按断面编号生成断面图形的功能。最后的第三版，做到把全部图纸连同边框，一次性几十张图纸全部生成。最后一版做出来后，效果真的很夸张，平常一个人几周的工作，电脑可以几分钟给出。虽然还需要人工做些微调，但是效率的提升、图纸质量的提高，使得每个同一部门的同事都会来用这个软件，因为摸鱼时间能多很多。<br>我在写小软件方面的成功，使我越发讨厌这份低效重复的工作。看着那些老同事们年复一年日复一日画圈圈，然后我写个垃圾软件都分分钟吊打他们的工作效率，我为什么还要呆在这个随时能被软件技术淘汰的职位上呢？而且KXXXXl也有意迁到武汉节省人力，我这份工作一定呆不久了。因为是在深圳，IT公司的集中地，而且我也算是写过几行代码，所以萌生了转行的想法。<br>在2014年5月1日，我冒着雨去广州和同学聚一聚，期间聊了很多和职业发展有关的话题。夜晚我回到深圳，无眠，半夜刷招聘网站，投了几家听都没听过的、明显是连小作坊都不如的公司，其中有现在的公司。那时那刻，是我24岁生日，我给自己的生日礼物，是转行的决定。<br>得到回应的是现在的公司，CTO约我到花园城的星巴克聊了很久，聊了过去的工作、我写的小软件、一些明显放水的面试题。后来还留了一个爬数据到本地，然后用Django输出查询页面的Assignment，没什么难度地完成了。后来也得到了转行的机会，契机也许是之前研究过Boost Python。</p><h2 id="第一份工作"><a href="#第一份工作" class="headerlink" title="第一份工作"></a>第一份工作</h2><p>入职后，我的第一份工作，是用Boost Python封装DLL。这份工作也不算太难，平时努力学习点API和DEMO，无惊无险完成工作。我面试时是Python Django职位，后来公司让我转前端，我也没什么想法地同意，自己对这个行业还是不太熟悉，没有考虑到前后端职业发展的区别，但是也没什么资本say no吧。<br>转前端后的第一份工作，是接手一个Angular.js应用。它是另外一位创始人在写，用来显示一些策略绩效、持仓、成交、委托数据。我接手后，也添加了账户、风控、回测功能，Angular.js写起来还算熟练，不过工作内容倒是没什么太大亮点，或者说，有一部分还完成得挺丑的。其中有一个展示下单信号的功能，需要在曲线上展示股票买卖纪录。我选用了Highchart来输出曲线（忘了是收益率还是行情），然后用Highchart的画图API画买卖信号点。受限于Highchart，这个功能做出来我自己都觉得效果不太好，也感受到背后的一些评价。<br>刚好我碰到了TradingView，它的图表功能相当惊艳，因为TradingView的图表没有开源，我萌生了自己写图表的想法。我研究了React-Stockchart还有Techan，它们的核心代码都是基于d3的，所以我也学了点d3d的内容，了解了图表的组成和实现。<br>我理解React-Stockchart的代码，改写成一个支持信号展示的版本，然后在公司的一个新项目里试了一下，效果还是不太好，对于缩放/动态加载这样的功能，实现起来挺困难。后来我花了一个月的业余时间，自己从零写了自己的图表，命名为nila，韭菜的意思😀。替换了原来那个，效果好一点吧，当然比起TradingView还差很远。<br>后来了解到了数字货币网站OKCoin, 他们的图表居然没混淆，赶紧保存了一份，不过后面离职了就没再研究。</p><h2 id="第二份工作"><a href="#第二份工作" class="headerlink" title="第二份工作"></a>第二份工作</h2><p>因为发薪的原因，我选择的跳槽。我当时的求职策略挺鲁莽的，什么准备都没有就直接投了，面了几家吧，一家业务不感兴趣，一家要求ES5，一家和面试官气场不合，最后进了BXXXo。<br>进BXXXo时挺慌的，因为那里有四地的团队，香港，台湾，深圳，美国。深圳Office是新组建，暂时在思微租了间小房间办公。因为刚组建，我是第一个招来的，除了我就只有飞来飞去的CTO，所以开始时Office只有我一人，自己点外卖自己吃。至于前端，之前台湾的都走了，还有香港的一位，平时也接触少吧。<br>我碰到的第一个困难是在网络。公司用了Atlassian全家桶，我的科学上网技能得到很大锻炼。我第二个困难是，所谓的敏捷开发模式。这家公司采取了每天StandUp Meeting, 每周Sprint Meeting, 自己开发估时这些操作，我一直都很不适应。特别是在Sprint Meeting上，PM分派任务估时，很多全新问题完全没有头绪，而且加上取悦他人的自卑心态，我总是少估了时间，然后都加班完成。<br>我的第一次通宵加班，是在这家公司。这家公司为Jamie’s Italian提供系统，但是居然交给外包开发，然后上线前夕，竟然需要我这边去完成功能。我接受外包代码后就懵了，因为完全看不懂啊!他们的写法从来没见过，后来才知道，那是函数式编程。我硬着头皮理解代码理解业务，勉强完成老板的要求。因为要陪着现场支持一起完成上线测试，我和CTO还有iOS同事加班到第二天五点，而且还是两次，我觉得这是人生中最能吹的经历。<br>在那家公司，我还经历了严重加班。开始时香港老板不来深圳，下班时间还不算晚，后来换了大的Office，老板经常来，在背后看着改代码那种。之前还能七八点下班，现在经常是十二点下班，我都成了出租车常客了。算起来，十点半上班，十二点下班，扣除吃饭时间，每天工作12小时。这样的压力下，而且因为吃饭不定时，我是胖了一些，而且感觉身体透支也挺严重的。<br>。期间最大的成就是，把外包写得性能极差的React应用的部分页面，用Canvas替换。虽然这只是个临时的Workaround,而且也许后来的人接手困难，但没办法，我的元旦假期就耗在这上面，提前做完提前放假。因为被外包的FP代码虐过，我在这方面的功力有所增长。<br>三个月吧，我就想走了，因为气氛极其压抑。后面投了一家，要降薪，没去，然后之前的CTO找我，说是融资了，让我回去，然后平薪回去。</p><h2 id="第三份工作"><a href="#第三份工作" class="headerlink" title="第三份工作"></a>第三份工作</h2><p>这次是二进宫，我给CTO报自己最新的薪水时，他沉默了，因为是我离开时的两倍。他还是答应了，后面在招聘新员工时，他还想找高级前端，也许因为价钱太低，那个高级前端没来，幸好。<br>不过我这边也得也得展示一下能力。新项目是之前的Angular.js应用加一个编辑器功能，调研时根据开发体验，在VSCode和Atom之间选了VSCode进行二次开发；普通页面方面选了Vue，因为CTO看中了ElementUI，说是可以提高效率。<br>凭借这次的VSCode二次开发，我对它的源码有了相当多的了解，学习了优秀的架构设计；而且也对Electron应用开发有了很大心得，之前两次工作中接触的Elctron开发内容，只能算是玩具级别。<br>另一方面，我重拾之前的图表开发，我打算以TradingView为目标，从零写起。我研究了Okcoin的图表，主要是多Series叠加的实现，扩展出一套自己的架构。值得一提的是，这套架构是从VSCode源码改出来的。<br>因为后端完全不考虑指标数据的提供，我得自己实现这部分。TradingView有一套PineScript来实现指标计算，所以我也考虑实现自己的DSL。因为不是科班出身，编译原理这一块完全没系统学习过，为了求方便，参考PineScript的方案，用ANTLR来实现。我参考了部分JS和Python的语法，定义了一套DSL来实现指标计算。其中核心的部分，是来自OKCoin的指标计算的代码。<br>然后图表最后的难题是Canvas绘图，我打算做得和TradingView一样，支持负责的绘图功能，所以鼠标事件要完整支持。研究了一下EChart和其他几个会图库，我实现了自己会图库，功能不太强，但是够我的图表使用了。<br>最后图表按TradingView的主要功能做出来，辅助绘图、周期切换、动态加载、信号展示，这些功能全抄了，后面在一个数字货币项目使用，效果还行。然后继续改进，按照国情，增加日内分时图在新的仿真项目还有最近的改版里面使用。这个功能做得挺辛苦，因为后端API太难用了。<br>我现在这份工作，也收获了一下项目管理的经验，人员分配，工时安排，节点规划，进度监督这些。在这个草台班子里，科学的管理是最缺的，因为项目延期是家常便饭。个人摸鱼角度来说挺爽，至于对公司发展来说嘛，又是另一回事了。</p><h2 id="未来"><a href="#未来" class="headerlink" title="未来"></a>未来</h2><p>下回分解</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;五月，是个特别的月份，承载了很多特别的回忆，这个月有生日纪念日、也有失恋纪念日。其中5月18日，是我转行IT的日子。&lt;/p&gt;
+&lt;h2 id=&quot;入行前&quot;&gt;&lt;a href=&quot;#入行前&quot; class=&quot;headerlink&quot; title=&quot;入行前&quot;&gt;&lt;/a&gt;入行前&lt;/h2&gt;&lt;p&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="https://waisiukei.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AltGr和Dead Key</title>
+    <link href="https://waisiukei.github.io/altgr-and-dead-key/"/>
+    <id>https://waisiukei.github.io/altgr-and-dead-key/</id>
+    <published>2019-05-25T08:15:20.000Z</published>
+    <updated>2020-10-26T14:08:58.475Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近项目里加了个和键盘控制有关的功能，因为之前没做过这一块，我要未(xiang)雨(de)绸(tai)缪(duo)研究一下快捷键功能的实现。参考的实现是VSCode的代码，因为在做图表时剪裁了部分代码，真有需求来时糊弄一下也能满足，但是自己还不太明白这一块，所以还得从原理研究。</p><p>VSCode处理不同键盘布局时，通过一个叫做native-keymap的模块，获取每个物理的Virtual Key Name，还有和各种装饰键组合时的输出字符：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123; key_code: &apos;VKEY_OEM_6&apos;,</span><br><span class="line">  value: &apos;]&apos;,</span><br><span class="line">  withShift: &apos;&#125;&apos;,</span><br><span class="line">  withAltGr: &apos;&apos;,</span><br><span class="line">  withShiftAltGr: &apos;&apos;,</span><br><span class="line">  valueIsDeadKey: false,</span><br><span class="line">  withShiftIsDeadKey: false,</span><br><span class="line">  withAltGrIsDeadKey: false,</span><br><span class="line">  withShiftAltGrIsDeadKey: false</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure></p><p>这里，value/withShift的意思可以猜到，但是AltGr和DeadKey还是第一次听说。</p><p>查了一下维基，倒是增长了见闻。键盘结构中和文字输入有关的是Character key，Modifier key和Dead keys。Character key基本是ACSII里面的有意义的文字，这个可以很好理解。</p><p>Modifier key可以和Character key组合输出，比如</p><ul><li>C → c（小写——第 1 级）</li><li>Shift+C → C（大写）</li><li>AltGr+C → ©（版权符号）<br>​- AltGr+Shift+C → ¢（美分符号）</li></ul><p>被划分Modifier key的是：</p><ul><li>Shift</li><li>Ctrl</li><li>Alt(⌥ Option)</li><li>AltGr</li><li>⊞ Win</li><li>⌘ Command</li><li>Fn</li></ul><p>这里面唯独AltGr这个键没见过。现在国内用的键盘布局，是美式键盘布局，就是Win7下切换到英文输入的那个；还有其他很多各种布局，特别是在欧洲。美式键盘（不同于美式国际键盘）是没有AltGr这个键的。欧洲地区的键盘布局都会有这个键，用来输入一些比较少见的字母：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">¡ ² ³ ¤ € ¼ ½ ¾ ‘ ’ ¥ ×</span><br><span class="line"> ä å é ® þ ü ú í ó ö « »</span><br><span class="line">  á ß ð           ø ¶ ´ ¬</span><br><span class="line">   æ   ©     ñ µ ç   ¿</span><br></pre></td></tr></table></figure></p><p>具体可以看<a href="https://en.wikipedia.org/wiki/AltGr_key" target="_blank" rel="noopener">维基关于AltGr的介绍</a>。</p><p>Dead Key这个也和欧洲语言有关，比如法文字母à这种衍生拉丁字母，上面的`代表变音的符号，需要用Dead Key来输入。具体可以看<a href="https://en.wikipedia.org/wiki/Dead_key" target="_blank" rel="noopener">维基关于Dead Key的介绍</a>。</p><p>考虑到我写的软件只面向国内用户，最多最多再放放Github，这AltGr和Dead Key就不深入研究了。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;最近项目里加了个和键盘控制有关的功能，因为之前没做过这一块，我要未(xiang)雨(de)绸(tai)缪(duo)研究一下快捷键功能的实现。参考的实现是VSCode的代码，因为在做图表时剪裁了部分代码，真有需求来时糊弄一下也能满足，但是自己还不太明白这一块，所以还得从原理研
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://waisiukei.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AOP面向切面编程</title>
+    <link href="https://waisiukei.github.io/aop-in-frontend/"/>
+    <id>https://waisiukei.github.io/aop-in-frontend/</id>
+    <published>2019-05-12T14:11:30.000Z</published>
+    <updated>2020-10-26T14:08:58.475Z</updated>
+    
+    <content type="html"><![CDATA[<p>Java的Spring框架有两个核心的概念IoC和AOP。我之前写的文中，提到了我在现有项目用了IoC解决循环依赖。而AOP这一个编程范式，再现在的项目中也有使用。使用AOP，可以在不改动原来代码的前提下，对现有类的方法进行增强，从而实现更多的功能。</p><p>Java的AOP是通过<code>@</code>注解进行的（还有一系列XML配置），类似地，JavaScript里也有<a href="https://github.com/tc39/proposal-decorators" target="_blank" rel="noopener">proposal-decorators</a>，可以使用一模一样的代码写法。JavaScript里的装饰器<code>@</code>，可以对类和类方法进行装饰。我目前使用的装饰器语法是legacy的，使用@babel/plugin-proposal-decorators时，需要开启legacy选项，新的proposal比我认知中的功能多了好多东西。</p><p>使用decorator-legacy于类时，写法是这样:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params">target</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// blah blah</span></span><br><span class="line">    <span class="keyword">return</span> target</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">bar</span>(<span class="params">...args</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">target</span>) </span>&#123;</span><br><span class="line">        <span class="comment">// blah blah </span></span><br><span class="line">        <span class="keyword">return</span> target</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@foo</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span></span>&#123;&#125;</span><br><span class="line"></span><br><span class="line">@bar(...)</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">B</span></span>&#123;&#125;</span><br></pre></td></tr></table></figure></p><p>decorator函数内，可以做一些自定义的处理，比如<code>autobind-decorator</code>把类方法都绑定了正确的this；decorator-legacy用于方法是，写法是：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params">target, key, descriptor</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// blah blah blah</span></span><br><span class="line">    <span class="keyword">return</span> descriptor</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">bar</span>(<span class="params">...args</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">target, key, descriptor</span>) </span>&#123;</span><br><span class="line">        <span class="comment">// blah blah blah</span></span><br><span class="line">        <span class="keyword">return</span> descriptor</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span> </span>&#123;</span><br><span class="line">    @foo</span><br><span class="line">    f1() &#123;&#125;</span><br><span class="line"></span><br><span class="line">    @bar(...)</span><br><span class="line">    f2() &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>👆参数里的descriptor就是Property descriptor，返回值可以是参数里的descriptor，也可能是新的descriptor。</p><p>在使用AOP时，有一个Aspect切面的概念，对方法进行切面处理时，得到方法前后面，如同切香肠。吐过在方法调用前或者调用后插入目标代码片段，就能在不改动方法原有代码的前提下，实现新的功能。像AspectJS这种规规矩矩的库里，实现AOP就会要求定义before/after的函数。我在实践中，倒没有这么讲究，比如我的代码<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params">target, key, descriptor</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> fu = descriptor.value</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        ...descriptor,</span><br><span class="line">        value: <span class="function"><span class="keyword">function</span> <span class="title">wrapped</span>(<span class="params">...args</span>) </span>&#123;</span><br><span class="line">            <span class="comment">// do something before</span></span><br><span class="line">            <span class="keyword">let</span> result = fn.call(<span class="keyword">this</span>, ...args)</span><br><span class="line">            <span class="comment">// do something after</span></span><br><span class="line">            <span class="keyword">return</span> result</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">bar</span>(<span class="params">target, key, descriptor</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> newKey = ...</span><br><span class="line">    <span class="keyword">let</span> newDescriptor = ...</span><br><span class="line">    <span class="built_in">Object</span>.defineProperty(target, newKey, newDescriptor)</span><br><span class="line">    <span class="keyword">return</span> descriptor</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>我的AOP代码基本上始于上面的decorator function，根据业务特点，分别用于方法增强和给类添加新的方法。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Java的Spring框架有两个核心的概念IoC和AOP。我之前写的文中，提到了我在现有项目用了IoC解决循环依赖。而AOP这一个编程范式，再现在的项目中也有使用。使用AOP，可以在不改动原来代码的前提下，对现有类的方法进行增强，从而实现更多的功能。&lt;/p&gt;
+&lt;p&gt;Java
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://waisiukei.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>观察者模式</title>
+    <link href="https://waisiukei.github.io/observer-pattern-in-frontend/"/>
+    <id>https://waisiukei.github.io/observer-pattern-in-frontend/</id>
+    <published>2019-05-11T13:39:44.000Z</published>
+    <updated>2020-10-26T14:08:58.477Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://zh.wikipedia.org/wiki/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F" target="_blank" rel="noopener">观察者模式</a>是前端开发中用得比较多的设计模式，它的基本实现思路是观察者注册、事件通知和事件响应回调。开发实践中，由于Javascript的单线程特性，为了让事件、网络、脚本执行等任务可以高效，VM需要使用EventLoop来实现任务调度，继而各种异步、闭包的概念因此而来。观察者模式的核心，应该就是回调设置。</p><p>在处理DOM事件时，需要把给希望处理的事件绑定EventListener，通常的写法会是：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1</span></span><br><span class="line">div.onclick = fn</span><br><span class="line"><span class="comment">// 2</span></span><br><span class="line">div.addEventListener(<span class="string">'click'</span>, fn)</span><br><span class="line"><span class="comment">// 3</span></span><br><span class="line">div.addEventListener(<span class="string">'click'</span>, &#123;</span><br><span class="line">    handleEvent() &#123;</span><br><span class="line">        <span class="comment">// blah blah blah</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p><p>设置完EventListener，在事件触发后，内部引擎会逐一调用EventListener，通知处理相应的事件。在Node.js中，也会有类似于浏览器环境的事件处理机制，比如:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">process.on(&apos;uncaughtexception&apos;, fn)</span><br></pre></td></tr></table></figure></p><p>Node.js很多对象都继承自EventEmitter，比如stream、socket等。</p><p>上面说的是，JavaScript原生环境API实现的观察者模式，基本上就是实现EventEmitter接口。类似地，在QT中，有一种signal/slot机制用于事件处理，通过<code>connect(signal, slot)</code>这样的代码把signal和slot关联在一起。PhosphorJS实现了一条类似的API，而且提供了几个特别的API：<br><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">disconnectBetween(sender: <span class="built_in">any</span>, receiver: <span class="built_in">any</span>):<span class="built_in">void</span></span><br><span class="line">disconnectSender(sender: <span class="built_in">any</span>):<span class="built_in">void</span></span><br><span class="line">disconnectReceiver(receiver: <span class="built_in">any</span>):<span class="built_in">void</span></span><br><span class="line">disconnectAll(object: <span class="built_in">any</span>):<span class="built_in">void</span></span><br></pre></td></tr></table></figure></p><p> 在现在类似IDE的layout，处理拖拽组件和布局容器的关系时，👆的方法能快速取消signal和slot的关联关系，而且在组件销毁时，也能方便地进行回收处理。平时开发常用的EventEmitter因为忘记取消回调而发生内存泄漏的人为错误挺多的，实现自己的EventEmitter时，有必要参考PhosphorJS的设计。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;观察者模式&lt;/a&gt;是前端开发中用得比较多
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://waisiukei.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>前端框架存在的意义</title>
+    <link href="https://waisiukei.github.io/frontend-frameworks/"/>
+    <id>https://waisiukei.github.io/frontend-frameworks/</id>
+    <published>2019-05-10T08:45:02.000Z</published>
+    <updated>2020-10-26T14:08:58.476Z</updated>
+    
+    <content type="html"><![CDATA[<p>我曾两次被问到同一个问题：前端框架存在的意义/前端框架解决的是什么问题。当时回答得都不太好，现在再组织一下语言写一下。</p><p>作为个人项目和我公司及其外包项目的主程，Vanilla.js的信仰者，人肉优化的实践者，我一向坚持自己进行DOM操作。我给公司项目写的图表表格，基本都是零外部依赖的代码。这些特殊应用，有性能追求，框架的效率绝对比不上手工优化的代码。</p><p>不过，我专注的场景，应该只是前端1%方向，剩下的99%，都是些拉数显示、CRUD的页面。这样的场景下，框架的确很流行。各类框架诞生后，已经把jQuery这样底层的库给淘汰。伴随框架而来的MVC、MVP、MVVM概念，的确是前端开发的新武器。各类框架基本上都会要求定义与显示相关数据，和用于生成DOM结构的模版，和事件处理。然后框架们基本都能按数据变化，自动执行模版渲染，将数据同步到页面。另一方面，用户在页面交互产生的事件，都能自动或者半自动反映到状态数据来。可以看出，前端开发工作中比较多的问题，是数据和页面显示的同步。如果不使用任何辅助的库的话，需要更新一个显示数据，需要先在DOM🌲找到对应的节点再进行修改；再者在表单中，需要获知数据值的变化，也需要监听事件。这也就是当年jQuery这类辅助DOM操作的库得以流行的原因。</p><p>从操作DOM的开发模式到使用框架的转变，对应的是编程范式从命令式编程到声明式编程变化。究竟是框架的诞生引领了这种变化，还是新的编程范式流行导致了框架的诞生？跳出这个先有鸡还是先有蛋的问题，回顾前端开发的历史，伴随着网络的升级和终端计算能力的提升，越来越多任务放在了用户端一侧，前端应用的体积越来越大，前端开发的工作量也是伴随着上升。刚才提到，前端页面存在的意义，是数据显示和用户交互。面对计划列表里越来越多需要完成的页面，重复使用底层API操作DOM的开发方式，效率挺低的。“懒惰”s是程序员的美德，比起使用详细的命令去一步一步得到结果，大家需要的是能自动将数据反映到页面上的工具，这个工具就是现在的框架。</p><p>有人会宣传框架比起各种jQuery的各种优势，但从用户角度/从产品角度/从业务角度来时，才不关心前端们代码怎样写，PM需要的是“明天上线”。何不承认，框架的意义，是解决越来越长的需求列表和前端们希望六点下班的矛盾🙃。</p><p>顺便看看近几年来几个有名的框架的热度变化，基本是此消彼长的变化趋势。</p><script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1754_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"angular.js","geo":"US","time":"2010-04-10 2019-05-10"},{"keyword":"backbone.js","geo":"US","time":"2010-04-10 2019-05-10"},{"keyword":"react.js","geo":"US","time":"2010-04-10 2019-05-10"},{"keyword":"vue.js","geo":"US","time":"2010-04-10 2019-05-10"}],"category":0,"property":""}, {"exploreQuery":"date=2010-04-10%202019-05-10&geo=US&q=angular.js,backbone.js,react.js,vue.js","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;我曾两次被问到同一个问题：前端框架存在的意义/前端框架解决的是什么问题。当时回答得都不太好，现在再组织一下语言写一下。&lt;/p&gt;
+&lt;p&gt;作为个人项目和我公司及其外包项目的主程，Vanilla.js的信仰者，人肉优化的实践者，我一向坚持自己进行DOM操作。我给公司项目写的图表表
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>循环依赖和IoC</title>
+    <link href="https://waisiukei.github.io/circular-dependency-and-ioc/"/>
+    <id>https://waisiukei.github.io/circular-dependency-and-ioc/</id>
+    <published>2019-05-09T06:18:07.000Z</published>
+    <updated>2020-10-26T14:08:58.476Z</updated>
+    
+    <content type="html"><![CDATA[<p>目前项目里，因为前期的代码没有分层，底层和上层的代码相互import，出现了循环依赖，最终导致构建失败。</p><p>最好的解决方案当然时严格执行分层。TSLint里的<code>import-patterns</code>配置项，能控制一个文件只能从何处引入其他模块：<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"import-patterns"</span>: [</span><br><span class="line"><span class="literal">true</span>,</span><br><span class="line">&#123;</span><br><span class="line"><span class="attr">"target"</span>: <span class="string">"**/vs/base/common/**"</span>,</span><br><span class="line"><span class="attr">"restrictions"</span>: [</span><br><span class="line"><span class="string">"vs/nls"</span>,</span><br><span class="line"><span class="string">"**/vs/base/common/**"</span></span><br><span class="line">]</span><br><span class="line">&#125;,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>比如👆摘录自VSCode的配置，它约束了基础模块目录下文件不能从目录外import。</p><p>但是考虑项目基本成形，而且缺乏各种单元测试集成测试，实在没有信心对现成代码大规模重构。所以我想的办法是，把被相互依赖的实例，挂到一个全局对象，类似早期前端开发的做法：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> ioc = &#123;&#125;</span><br><span class="line">ioc.serviceA = &#123;&#125;</span><br><span class="line">ioc.serviceB = &#123;&#125;</span><br></pre></td></tr></table></figure></p><p>这样能解决文件级别的相互依赖，但是不能解决代码逻辑级别的依赖，比如两个类的方法会相互调用实例：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> ioc = &#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ServiceA</span> </span>&#123;</span><br><span class="line">    foo() &#123;</span><br><span class="line">        ioc.serviceB.bar()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ServiceB</span> </span>&#123;</span><br><span class="line">    bar() &#123;</span><br><span class="line">        ioc.serviceA.foo()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">ioc.serviceA = <span class="keyword">new</span> ServiceA()</span><br><span class="line">ioc.serviceB = <span class="keyword">new</span> ServiceB()</span><br></pre></td></tr></table></figure></p><p>可见，在挂载到依赖注入容器时，如果挂载的是实例，就会有👆的问题。InversifyJS是使用实例来注册依赖的<br><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> myContainer = <span class="keyword">new</span> Container();</span><br><span class="line">myContainer.bind&lt;Warrior&gt;(TYPES.Warrior).to(Ninja);</span><br><span class="line">myContainer.bind&lt;Weapon&gt;(TYPES.Weapon).to(Katana);</span><br></pre></td></tr></table></figure></p><p>所以这个库也碰到<a href="https://github.com/inversify/InversifyJS/blob/master/wiki/circular_dependencies.md" target="_blank" rel="noopener">循环依赖</a>的问题。</p><p>如果在注册依赖时，注册的时构造函数，而不是实例，在获取依赖时再去初始化，应该就能解决循环依赖的问题。而且InversifyJS也好，VSCode也好，他们注册或注入依赖都受限于TypeScript写法，不太简洁。如果单纯考虑在JavaScript使用，依赖注册可以做成把构造函数赋值给依赖容器的某个属性名，依赖注入就是返回实例，如果没有初始化的，要初始化实例。刚开始时我用了getter/setter，其实使用Proxy机制，可以做到属性拦截，让依赖注入用起来更简洁，最后得到的依赖注入服务的代码如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// module InistanceService</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">InistanceService</span> </span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>() &#123;</span><br><span class="line">    <span class="keyword">this</span>.serviceCtors = &#123;&#125;;</span><br><span class="line">    <span class="keyword">this</span>.services = &#123;&#125;;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">get</span>(name) &#123;</span><br><span class="line">    <span class="keyword">let</span> serv = <span class="keyword">this</span>.services[name];</span><br><span class="line">    <span class="keyword">let</span> Ctor = <span class="keyword">this</span>.serviceCtors[name];</span><br><span class="line">    <span class="keyword">if</span> (!serv &amp;&amp; !Ctor) &#123;</span><br><span class="line">      <span class="built_in">console</span>.warn(<span class="string">'[ioc]: Could not resolve '</span>, name); </span><br><span class="line">      <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (serv) <span class="keyword">return</span> serv;</span><br><span class="line">    <span class="keyword">let</span> instance = <span class="keyword">new</span> Ctor();</span><br><span class="line">    <span class="keyword">this</span>.services[name] = instance;</span><br><span class="line">    <span class="keyword">return</span> instance;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> instance = <span class="keyword">new</span> InistanceService();</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> handler = &#123;</span><br><span class="line">  <span class="keyword">get</span>(target, name) &#123;</span><br><span class="line">    <span class="keyword">if</span> (target[name]) <span class="keyword">return</span> target[name];</span><br><span class="line">    <span class="keyword">return</span> target.get(name);</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="keyword">set</span>(obj, prop, value) &#123;</span><br><span class="line">    obj.set(prop, value);</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> ioc = <span class="keyword">new</span> <span class="built_in">Proxy</span>(instance, handler);</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;目前项目里，因为前期的代码没有分层，底层和上层的代码相互import，出现了循环依赖，最终导致构建失败。&lt;/p&gt;
+&lt;p&gt;最好的解决方案当然时严格执行分层。TSLint里的&lt;code&gt;import-patterns&lt;/code&gt;配置项，能控制一个文件只能从何处引入其他模块：&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://waisiukei.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Disposable 和 GC</title>
+    <link href="https://waisiukei.github.io/disposable-and-gc/"/>
+    <id>https://waisiukei.github.io/disposable-and-gc/</id>
+    <published>2019-05-09T01:44:42.000Z</published>
+    <updated>2020-10-26T14:08:58.476Z</updated>
+    
+    <content type="html"><![CDATA[<p>Disposable Object这个概念源自C#，它会实现IDisposable接口，从而实现一种释放Unmanaged Resources的机制。在C#里，Managed resources基本是指垃圾回收器管理的内存，Unmanaged Resources是指打开的文件、打开的网络链接等。</p><p>JavaScript也是一门带有GC的语言，一般来说不太需要自行管理内存。但是由于异步编程是JavaScript开发的基本技术，和异步相关的Callback、闭包往往是前端应用内存泄漏的原因。被不当使用的Callback、闭包，对于垃圾管理器来说，实属Unmanaged Resources。对于这些需要被“回收”的内容，其实可以借用C#的IDisposable的概念，管理资源释放问题。</p><p>IDisposable接口定义了dispose()方法，如下：<br><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> IDisposable &#123;</span><br><span class="line">    dispose(): <span class="built_in">void</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>往往在Disposable Object需要被销毁前，手工调用dispose()方法。</p><p>在VSCode源码和PhosphorJS里面，IDisposable到处可见，有点不同的是，PhosphorJS的IDisposable会有disposed属性。VSCode源码里，和’Unmanaged Resources’，相关的对象/方法，都会返回IDisposable，用于释放资源。比如EventEmitter的事件监听回调设置、DOM元素的事件绑定等。</p><p>实现IDisposable接口然后显式调用dispose()，这样虽然可行，但如果有C++的RAII机制，在对象从栈中销毁时，自动调用dispose()，会减少很多人为的错误。JavaScript的Class没有类似析构函数的概念，目前有一个相关的提案<a href="https://github.com/tc39/proposal-weakrefs/" target="_blank" rel="noopener">proposal-weakrefs</a>, 它提到了Finalization，可惜也是需要直接或者间接调用，并不像RAII那么方便。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Disposable Object这个概念源自C#，它会实现IDisposable接口，从而实现一种释放Unmanaged Resources的机制。在C#里，Managed resources基本是指垃圾回收器管理的内存，Unmanaged Resources是指打开的文
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://waisiukei.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Foreground and Active</title>
+    <link href="https://waisiukei.github.io/foreground-and-active/"/>
+    <id>https://waisiukei.github.io/foreground-and-active/</id>
+    <published>2019-05-08T12:58:53.000Z</published>
+    <updated>2020-10-26T14:08:58.476Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近收到一个需求，需要参（抄）考（袭）传统盯盘软件，当用户处于行情页面时，无需点击”输入代码“之类的<code>&lt;input&gt;</code>，只要在键盘按下一个键，就有一个股票代码搜索提示弹出来，供用户选中需要查看的股票。</p><p>这样的需求分析一下，会发现有些麻烦，前端需要判断当前页面没有弹出的<code>&lt;prompt&gt;/&lt;confirm&gt;</code>，没有正在输入的<code>&lt;input&gt;/&lt;textarea&gt;</code>；换个说法是，前端需要判断当前用户交互的焦点，需要知道用户的确是在盯盘。</p><p>HTML Standard 有个章节是讲 Focus 的，并且提供了一个相关的<code>document.activeElement</code>，利用这个API，可以知道用户正在交互的元素。但是现在的页面开发不是基于HTMLElement，而是基于某某框架的组件，问题是好像并没有哪个框架会提供<code>app.activeComponent</code>这样的API。</p><p>传统的 Windows GUI 开发中，有两个概念——<code>foreground</code>和<code>active</code>。传统的窗口叠窗口模式里，很容易区分用户的交互焦点，因为最前面的就是<code>active</code>的；而<code>foreground</code>/<code>background</code>是和线程有关。在浏览器单线程世界里，任务的执行没有<code>foreground</code>/<code>background</code>之分，，但是UI里，是可以有<code>foreground</code>/<code>background</code>组件。比如，弹出的对话框，天猫右滑出来的购物车组建，对于整个页面来说，是<code>foreground</code>。我想，<code>z-index</code>是判断<code>foreground</code>/<code>background</code>的依据。然后像<code>&lt;input&gt;</code>，一般<code>z-index</code>不变，但用户可以通过鼠标点击，实现<code>focus</code>/<code>blur</code>，从而影响倒页面的活动元素。</p><p>目前项目里的代码，只判断了<code>document.activeElement</code>这种情况，也就是只考虑了<code>active</code>，但是<code>foreground</code>是没有处理的，所以往后应该潜在的问题。</p><p>今天稍微想了一下（顺便水一篇），对于比较大型的应用来说，需要一个<code>FocusTrackingService</code>。我本来想在<code>VSCode</code>源码里查查，发现他们的方案也是挺依赖原生的focus属性，也算一种方案吧。不过一种通用的和平台无关的设计，应该是，焦点是可以让渡的。比如支付宝密码数据，六位数字，显示成六个输入的格子，当前面一位输入完成后，后一位会自动聚焦。这样的组件如果用操作DOM元素的思路来做，input后blur前一个input然后focus下一个元素。显然，这样的写法相当底层，不太符合面向xx编程的原则。</p><p>我会给需要可以焦点切换的组件，实现这样的interface<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">interface Focusable&#123;</span><br><span class="line">    deliverFocus(): void</span><br><span class="line">    acceptFocus(): void</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>其中，<code>deliverFocus()</code>是，当组件不需要focus时，自行让出焦点。比如说，对话框都会有<code>cancel()</code>和<code>dismiss()</code>，这两个方法对于其他组件来说，是让出焦点。应用内，应该需要有一个FocusTracker，跟踪当前聚焦的组件，以及计算让渡焦点后，下一个应该聚焦的组件（如果有的话）。下一个聚焦组件的<code>acceptFocus()</code>会由FocusTrackerz自动调用，从而实现支付宝密码输入时的切换效果。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;最近收到一个需求，需要参（抄）考（袭）传统盯盘软件，当用户处于行情页面时，无需点击”输入代码“之类的&lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt;，只要在键盘按下一个键，就有一个股票代码搜索提示弹出来，供用户选中需要查看的股票。&lt;/p&gt;
+&lt;p&gt;这样的需求分析一下，会发
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://waisiukei.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>第一篇</title>
+    <link href="https://waisiukei.github.io/hello/"/>
+    <id>https://waisiukei.github.io/hello/</id>
+    <published>2019-05-02T15:36:52.000Z</published>
+    <updated>2020-10-26T14:08:58.477Z</updated>
+    
+    <content type="html"><![CDATA[<p>搭了Hexo，开始写人生第一篇博。</p><p>我一直没有日记周记月记年记写作习惯，高中语文老师要求的周记作业是我的一大噩梦，表达能力和理解能力一向很低的我，当年甚至有过作文不及格的经历。所以啊，挺佩服有些同学坚持写日记的习惯。</p><p>今年已经28岁，什么过去的记录都没有呢。微信朋友圈也没有发过一条，空空的朋友圈在加好友时甚是尴尬，每次都要解释一下，不用说，第一印象一定是个怪人。</p><p>我不是出世的高人，只是一个固执的胆小鬼。胆小的我，总是怕面对一个事实——我只是一个普通人，总想着自己现在有多少努力，会有多少成就，但是接受不了自己泯然众人。我有个洋洋得意的习惯——断舍离，把东西不断扔掉，好像这样就能脱胎换骨。是这样？好像不是，只是我害怕过去的我，害怕自己的历史，害怕在别人面前展示真实的我。</p><p>躲躲藏藏这么多年，累了，脸皮也厚了，就到此吧。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;搭了Hexo，开始写人生第一篇博。&lt;/p&gt;
+&lt;p&gt;我一直没有日记周记月记年记写作习惯，高中语文老师要求的周记作业是我的一大噩梦，表达能力和理解能力一向很低的我，当年甚至有过作文不及格的经历。所以啊，挺佩服有些同学坚持写日记的习惯。&lt;/p&gt;
+&lt;p&gt;今年已经28岁，什么过去的记
+      
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="https://waisiukei.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+</feed>

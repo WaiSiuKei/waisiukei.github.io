@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang>
+  <head><meta name="generator" content="Hexo 3.8.0"><meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+<meta name="theme-color" content="#f8f5ec">
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="description" content="前端框架存在的意义"><meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验"><link rel="alternate" href="/atom.xml" title="WaiSiuKei's blog"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.11.0">
+<link rel="canonical" href="https://waisiukei.github.io/frontend-frameworks/">
+
+<link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css"><link rel="stylesheet" type="text/css" href="/lib/nprogress/nprogress.min.css">
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.11.0">
+
+<script id="baidu_push">
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<script>
+  window.config = {"leancloud":{"app_id":null,"app_key":null},"toc":true,"fancybox":true,"pjax":true,"latex":false};
+</script>
+
+    <title>前端框架存在的意义 - WaiSiuKei's blog</title>
+  </head>
+
+  <body><div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/." class="logo">WaiSiuKei's blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list"><a href="/">
+        <li class="mobile-menu-item">首页
+          </li>
+      </a><a href="/archives/">
+        <li class="mobile-menu-item">归档
+          </li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于
+          </li>
+      </a></ul>
+</nav>
+<div class="container" id="mobile-panel">
+      <header id="header" class="header"><div class="logo-wrapper">
+  <a href="/." class="logo">WaiSiuKei's blog</a>
+</div>
+
+<nav class="site-navbar"><ul id="menu" class="menu"><li class="menu-item">
+          <a class="menu-item-link" href="/">
+            首页
+            </a>
+        </li>
+      <li class="menu-item">
+          <a class="menu-item-link" href="/archives/">
+            归档
+            </a>
+        </li>
+      <li class="menu-item">
+          <a class="menu-item-link" href="/about/">
+            关于
+            </a>
+        </li>
+      </ul></nav>
+</header>
+
+      <main id="main" class="main">
+        <div class="content-wrapper">
+          <div id="content" class="content"><article class="post">
+    <header class="post-header">
+      <h1 class="post-title">前端框架存在的意义
+        </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2019-05-10
+        </span></div>
+    </header>
+
+    <div class="post-content"><p>我曾两次被问到同一个问题：前端框架存在的意义/前端框架解决的是什么问题。当时回答得都不太好，现在再组织一下语言写一下。</p>
+<p>作为个人项目和我公司及其外包项目的主程，Vanilla.js的信仰者，人肉优化的实践者，我一向坚持自己进行DOM操作。我给公司项目写的图表表格，基本都是零外部依赖的代码。这些特殊应用，有性能追求，框架的效率绝对比不上手工优化的代码。</p>
+<p>不过，我专注的场景，应该只是前端1%方向，剩下的99%，都是些拉数显示、CRUD的页面。这样的场景下，框架的确很流行。各类框架诞生后，已经把jQuery这样底层的库给淘汰。伴随框架而来的MVC、MVP、MVVM概念，的确是前端开发的新武器。各类框架基本上都会要求定义与显示相关数据，和用于生成DOM结构的模版，和事件处理。然后框架们基本都能按数据变化，自动执行模版渲染，将数据同步到页面。另一方面，用户在页面交互产生的事件，都能自动或者半自动反映到状态数据来。可以看出，前端开发工作中比较多的问题，是数据和页面显示的同步。如果不使用任何辅助的库的话，需要更新一个显示数据，需要先在DOM🌲找到对应的节点再进行修改；再者在表单中，需要获知数据值的变化，也需要监听事件。这也就是当年jQuery这类辅助DOM操作的库得以流行的原因。</p>
+<p>从操作DOM的开发模式到使用框架的转变，对应的是编程范式从命令式编程到声明式编程变化。究竟是框架的诞生引领了这种变化，还是新的编程范式流行导致了框架的诞生？跳出这个先有鸡还是先有蛋的问题，回顾前端开发的历史，伴随着网络的升级和终端计算能力的提升，越来越多任务放在了用户端一侧，前端应用的体积越来越大，前端开发的工作量也是伴随着上升。刚才提到，前端页面存在的意义，是数据显示和用户交互。面对计划列表里越来越多需要完成的页面，重复使用底层API操作DOM的开发方式，效率挺低的。“懒惰”s是程序员的美德，比起使用详细的命令去一步一步得到结果，大家需要的是能自动将数据反映到页面上的工具，这个工具就是现在的框架。</p>
+<p>有人会宣传框架比起各种jQuery的各种优势，但从用户角度/从产品角度/从业务角度来时，才不关心前端们代码怎样写，PM需要的是“明天上线”。何不承认，框架的意义，是解决越来越长的需求列表和前端们希望六点下班的矛盾🙃。</p>
+<p>顺便看看近几年来几个有名的框架的热度变化，基本是此消彼长的变化趋势。</p>
+<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1754_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"angular.js","geo":"US","time":"2010-04-10 2019-05-10"},{"keyword":"backbone.js","geo":"US","time":"2010-04-10 2019-05-10"},{"keyword":"react.js","geo":"US","time":"2010-04-10 2019-05-10"},{"keyword":"vue.js","geo":"US","time":"2010-04-10 2019-05-10"}],"category":0,"property":""}, {"exploreQuery":"date=2010-04-10%202019-05-10&geo=US&q=angular.js,backbone.js,react.js,vue.js","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
+
+
+      </div>
+      <div class="post-copyright">
+    <p class="copyright-item">
+      <span>原文作者: </span>
+      <a href="https://waisiukei.github.io">WaiSiuKei</a>
+    </p>
+    <p class="copyright-item">
+      <span>原文链接: </span>
+      <a href="https://waisiukei.github.io/frontend-frameworks/">https://waisiukei.github.io/frontend-frameworks/</a>
+    </p>
+    <p class="copyright-item">
+      <span>许可协议: </span><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>
+    </p>
+  </div>
+      <footer class="post-footer">
+        
+        <nav class="post-nav"><a class="prev" href="/observer-pattern-in-frontend/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text nav-default">观察者模式</span>
+        <span class="prev-text nav-mobile">上一篇</span>
+      </a>
+    <a class="next" href="/circular-dependency-and-ioc/">
+        <span class="next-text nav-default">循环依赖和IoC</span>
+        <span class="prev-text nav-mobile">下一篇</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    </nav></footer>
+    </article></div><div class="comments" id="comments"></div></div>
+      </main>
+
+      <footer id="footer" class="footer"><div class="social-links"><a href="mailto:wakiki@outlook.com" class="iconfont icon-email" title="email"></a>
+        <a href="https://github.com/waisiukei" class="iconfont icon-github" title="github"></a>
+        <a href="/atom.xml" class="iconfont icon-rss" title="rss"></a>
+    </div><div class="copyright">
+  <span class="copyright-year">&copy;2019 - 2020<span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">WaiSiuKei</span>
+  </span>
+</div>
+</footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div><script type="text/javascript" src="/lib/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/lib/pjax/jquery.pjax.min.js"></script>
+  <script type="text/javascript" src="/lib/nprogress/nprogress.min.js"></script>
+  <script type="text/javascript" src="/js/src/even.js?v=2.11.0"></script>
+</body>
+</html>

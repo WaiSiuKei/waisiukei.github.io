@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang>
+  <head><meta name="generator" content="Hexo 3.8.0"><meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+<meta name="theme-color" content="#f8f5ec">
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="description" content="Foreground and Active"><meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验"><link rel="alternate" href="/atom.xml" title="WaiSiuKei's blog"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.11.0">
+<link rel="canonical" href="https://waisiukei.github.io/foreground-and-active/">
+
+<link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css"><link rel="stylesheet" type="text/css" href="/lib/nprogress/nprogress.min.css">
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.11.0">
+
+<script id="baidu_push">
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<script>
+  window.config = {"leancloud":{"app_id":null,"app_key":null},"toc":true,"fancybox":true,"pjax":true,"latex":false};
+</script>
+
+    <title>Foreground and Active - WaiSiuKei's blog</title>
+  </head>
+
+  <body><div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/." class="logo">WaiSiuKei's blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list"><a href="/">
+        <li class="mobile-menu-item">首页
+          </li>
+      </a><a href="/archives/">
+        <li class="mobile-menu-item">归档
+          </li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于
+          </li>
+      </a></ul>
+</nav>
+<div class="container" id="mobile-panel">
+      <header id="header" class="header"><div class="logo-wrapper">
+  <a href="/." class="logo">WaiSiuKei's blog</a>
+</div>
+
+<nav class="site-navbar"><ul id="menu" class="menu"><li class="menu-item">
+          <a class="menu-item-link" href="/">
+            首页
+            </a>
+        </li>
+      <li class="menu-item">
+          <a class="menu-item-link" href="/archives/">
+            归档
+            </a>
+        </li>
+      <li class="menu-item">
+          <a class="menu-item-link" href="/about/">
+            关于
+            </a>
+        </li>
+      </ul></nav>
+</header>
+
+      <main id="main" class="main">
+        <div class="content-wrapper">
+          <div id="content" class="content"><article class="post">
+    <header class="post-header">
+      <h1 class="post-title">Foreground and Active
+        </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2019-05-08
+        </span></div>
+    </header>
+
+    <div class="post-content"><p>最近收到一个需求，需要参（抄）考（袭）传统盯盘软件，当用户处于行情页面时，无需点击”输入代码“之类的<code>&lt;input&gt;</code>，只要在键盘按下一个键，就有一个股票代码搜索提示弹出来，供用户选中需要查看的股票。</p>
+<p>这样的需求分析一下，会发现有些麻烦，前端需要判断当前页面没有弹出的<code>&lt;prompt&gt;/&lt;confirm&gt;</code>，没有正在输入的<code>&lt;input&gt;/&lt;textarea&gt;</code>；换个说法是，前端需要判断当前用户交互的焦点，需要知道用户的确是在盯盘。</p>
+<p>HTML Standard 有个章节是讲 Focus 的，并且提供了一个相关的<code>document.activeElement</code>，利用这个API，可以知道用户正在交互的元素。但是现在的页面开发不是基于HTMLElement，而是基于某某框架的组件，问题是好像并没有哪个框架会提供<code>app.activeComponent</code>这样的API。</p>
+<p>传统的 Windows GUI 开发中，有两个概念——<code>foreground</code>和<code>active</code>。传统的窗口叠窗口模式里，很容易区分用户的交互焦点，因为最前面的就是<code>active</code>的；而<code>foreground</code>/<code>background</code>是和线程有关。在浏览器单线程世界里，任务的执行没有<code>foreground</code>/<code>background</code>之分，，但是UI里，是可以有<code>foreground</code>/<code>background</code>组件。比如，弹出的对话框，天猫右滑出来的购物车组建，对于整个页面来说，是<code>foreground</code>。我想，<code>z-index</code>是判断<code>foreground</code>/<code>background</code>的依据。然后像<code>&lt;input&gt;</code>，一般<code>z-index</code>不变，但用户可以通过鼠标点击，实现<code>focus</code>/<code>blur</code>，从而影响倒页面的活动元素。</p>
+<p>目前项目里的代码，只判断了<code>document.activeElement</code>这种情况，也就是只考虑了<code>active</code>，但是<code>foreground</code>是没有处理的，所以往后应该潜在的问题。</p>
+<p>今天稍微想了一下（顺便水一篇），对于比较大型的应用来说，需要一个<code>FocusTrackingService</code>。我本来想在<code>VSCode</code>源码里查查，发现他们的方案也是挺依赖原生的focus属性，也算一种方案吧。不过一种通用的和平台无关的设计，应该是，焦点是可以让渡的。比如支付宝密码数据，六位数字，显示成六个输入的格子，当前面一位输入完成后，后一位会自动聚焦。这样的组件如果用操作DOM元素的思路来做，input后blur前一个input然后focus下一个元素。显然，这样的写法相当底层，不太符合面向xx编程的原则。</p>
+<p>我会给需要可以焦点切换的组件，实现这样的interface<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">interface Focusable&#123;</span><br><span class="line">    deliverFocus(): void</span><br><span class="line">    acceptFocus(): void</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>其中，<code>deliverFocus()</code>是，当组件不需要focus时，自行让出焦点。比如说，对话框都会有<code>cancel()</code>和<code>dismiss()</code>，这两个方法对于其他组件来说，是让出焦点。应用内，应该需要有一个FocusTracker，跟踪当前聚焦的组件，以及计算让渡焦点后，下一个应该聚焦的组件（如果有的话）。下一个聚焦组件的<code>acceptFocus()</code>会由FocusTrackerz自动调用，从而实现支付宝密码输入时的切换效果。</p>
+
+      </div>
+      <div class="post-copyright">
+    <p class="copyright-item">
+      <span>原文作者: </span>
+      <a href="https://waisiukei.github.io">WaiSiuKei</a>
+    </p>
+    <p class="copyright-item">
+      <span>原文链接: </span>
+      <a href="https://waisiukei.github.io/foreground-and-active/">https://waisiukei.github.io/foreground-and-active/</a>
+    </p>
+    <p class="copyright-item">
+      <span>许可协议: </span><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>
+    </p>
+  </div>
+      <footer class="post-footer">
+        <div class="post-tags">
+            <a href="/tags/技术/">技术</a>
+            </div>
+        
+        <nav class="post-nav"><a class="prev" href="/disposable-and-gc/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text nav-default">Disposable 和 GC</span>
+        <span class="prev-text nav-mobile">上一篇</span>
+      </a>
+    <a class="next" href="/hello/">
+        <span class="next-text nav-default">第一篇</span>
+        <span class="prev-text nav-mobile">下一篇</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    </nav></footer>
+    </article></div><div class="comments" id="comments"></div></div>
+      </main>
+
+      <footer id="footer" class="footer"><div class="social-links"><a href="mailto:wakiki@outlook.com" class="iconfont icon-email" title="email"></a>
+        <a href="https://github.com/waisiukei" class="iconfont icon-github" title="github"></a>
+        <a href="/atom.xml" class="iconfont icon-rss" title="rss"></a>
+    </div><div class="copyright">
+  <span class="copyright-year">&copy;2019 - 2020<span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">WaiSiuKei</span>
+  </span>
+</div>
+</footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div><script type="text/javascript" src="/lib/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/lib/pjax/jquery.pjax.min.js"></script>
+  <script type="text/javascript" src="/lib/nprogress/nprogress.min.js"></script>
+  <script type="text/javascript" src="/js/src/even.js?v=2.11.0"></script>
+</body>
+</html>

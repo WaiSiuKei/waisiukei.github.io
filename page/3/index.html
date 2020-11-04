@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang>
+  <head><meta name="generator" content="Hexo 3.8.0"><meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+<meta name="theme-color" content="#f8f5ec">
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验"><link rel="alternate" href="/atom.xml" title="WaiSiuKei's blog"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.11.0">
+<link rel="canonical" href="https://waisiukei.github.io/page/3/">
+
+<link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css"><link rel="stylesheet" type="text/css" href="/lib/nprogress/nprogress.min.css">
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.11.0">
+
+<script id="baidu_push">
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<script>
+  window.config = {"leancloud":{"app_id":null,"app_key":null},"toc":true,"fancybox":true,"pjax":true,"latex":false};
+</script>
+
+    <title>WaiSiuKei's blog</title>
+  </head>
+
+  <body><div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/." class="logo">WaiSiuKei's blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list"><a href="/">
+        <li class="mobile-menu-item">首页
+          </li>
+      </a><a href="/archives/">
+        <li class="mobile-menu-item">归档
+          </li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于
+          </li>
+      </a></ul>
+</nav>
+<div class="container" id="mobile-panel">
+      <header id="header" class="header"><div class="logo-wrapper">
+  <a href="/." class="logo">WaiSiuKei's blog</a>
+</div>
+
+<nav class="site-navbar"><ul id="menu" class="menu"><li class="menu-item">
+          <a class="menu-item-link" href="/">
+            首页
+            </a>
+        </li>
+      <li class="menu-item">
+          <a class="menu-item-link" href="/archives/">
+            归档
+            </a>
+        </li>
+      <li class="menu-item">
+          <a class="menu-item-link" href="/about/">
+            关于
+            </a>
+        </li>
+      </ul></nav>
+</header>
+
+      <main id="main" class="main">
+        <div class="content-wrapper">
+          <div id="content" class="content"><section id="posts" class="posts"><article class="post">
+    <header class="post-header">
+      <h1 class="post-title"><a class="post-link" href="/circular-dependency-and-ioc/">循环依赖和IoC</a>
+        </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2019-05-09
+        </span></div>
+    </header>
+
+    <div class="post-content"><p>目前项目里，因为前期的代码没有分层，底层和上层的代码相互import，出现了循环依赖，最终导致构建失败。</p>
+<p>最好的解决方案当然时严格执行分层。TSLint里的<code>import-patterns</code>配置项，能控制一个文件只能从何处引入其他模块：<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"import-patterns"</span>: [</span><br><span class="line">	<span class="literal">true</span>,</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="attr">"target"</span>: <span class="string">"**/vs/base/common/**"</span>,</span><br><span class="line">		<span class="attr">"restrictions"</span>: [</span><br><span class="line">			<span class="string">"vs/nls"</span>,</span><br><span class="line">			<span class="string">"**/vs/base/common/**"</span></span><br><span class="line">		]</span><br><span class="line">	&#125;,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>比如👆摘录自VSCode的配置，它约束了基础模块目录下文件不能从目录外import。</p>
+<p>但是考虑项目基本成形，而且缺乏各种单元测试集成测试，实在没有信心对现成代码大规模重构。所以我想的办法是，把被相互依赖的实例，挂到一个全局对象，类似早期前端开发的做法：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> ioc = &#123;&#125;</span><br><span class="line">ioc.serviceA = &#123;&#125;</span><br><span class="line">ioc.serviceB = &#123;&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这样能解决文件级别的相互依赖，但是不能解决代码逻辑级别的依赖，比如两个类的方法会相互调用实例：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> ioc = &#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ServiceA</span> </span>&#123;</span><br><span class="line">    foo() &#123;</span><br><span class="line">        ioc.serviceB.bar()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ServiceB</span> </span>&#123;</span><br><span class="line">    bar() &#123;</span><br><span class="line">        ioc.serviceA.foo()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">ioc.serviceA = <span class="keyword">new</span> ServiceA()</span><br><span class="line">ioc.serviceB = <span class="keyword">new</span> ServiceB()</span><br></pre></td></tr></table></figure></p>
+<p>可见，在挂载到依赖注入容器时，如果挂载的是实例，就会有👆的问题。InversifyJS是使用实例来注册依赖的<br><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> myContainer = <span class="keyword">new</span> Container();</span><br><span class="line">myContainer.bind&lt;Warrior&gt;(TYPES.Warrior).to(Ninja);</span><br><span class="line">myContainer.bind&lt;Weapon&gt;(TYPES.Weapon).to(Katana);</span><br></pre></td></tr></table></figure></p>
+<p>所以这个库也碰到<a href="https://github.com/inversify/InversifyJS/blob/master/wiki/circular_dependencies.md" target="_blank" rel="noopener">循环依赖</a>的问题。</p>
+<p>如果在注册依赖时，注册的时构造函数，而不是实例，在获取依赖时再去初始化，应该就能解决循环依赖的问题。而且InversifyJS也好，VSCode也好，他们注册或注入依赖都受限于TypeScript写法，不太简洁。如果单纯考虑在JavaScript使用，依赖注册可以做成把构造函数赋值给依赖容器的某个属性名，依赖注入就是返回实例，如果没有初始化的，要初始化实例。刚开始时我用了getter/setter，其实使用Proxy机制，可以做到属性拦截，让依赖注入用起来更简洁，最后得到的依赖注入服务的代码如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// module InistanceService</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">InistanceService</span> </span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>() &#123;</span><br><span class="line">    <span class="keyword">this</span>.serviceCtors = &#123;&#125;;</span><br><span class="line">    <span class="keyword">this</span>.services = &#123;&#125;;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">get</span>(name) &#123;</span><br><span class="line">    <span class="keyword">let</span> serv = <span class="keyword">this</span>.services[name];</span><br><span class="line">    <span class="keyword">let</span> Ctor = <span class="keyword">this</span>.serviceCtors[name];</span><br><span class="line">    <span class="keyword">if</span> (!serv &amp;&amp; !Ctor) &#123;</span><br><span class="line">      <span class="built_in">console</span>.warn(<span class="string">'[ioc]: Could not resolve '</span>, name); </span><br><span class="line">      <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (serv) <span class="keyword">return</span> serv;</span><br><span class="line">    <span class="keyword">let</span> instance = <span class="keyword">new</span> Ctor();</span><br><span class="line">    <span class="keyword">this</span>.services[name] = instance;</span><br><span class="line">    <span class="keyword">return</span> instance;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> instance = <span class="keyword">new</span> InistanceService();</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> handler = &#123;</span><br><span class="line">  <span class="keyword">get</span>(target, name) &#123;</span><br><span class="line">    <span class="keyword">if</span> (target[name]) <span class="keyword">return</span> target[name];</span><br><span class="line">    <span class="keyword">return</span> target.get(name);</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="keyword">set</span>(obj, prop, value) &#123;</span><br><span class="line">    obj.set(prop, value);</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> ioc = <span class="keyword">new</span> <span class="built_in">Proxy</span>(instance, handler);</span><br></pre></td></tr></table></figure></p>
+
+        </div></article>
+      <article class="post">
+    <header class="post-header">
+      <h1 class="post-title"><a class="post-link" href="/disposable-and-gc/">Disposable 和 GC</a>
+        </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2019-05-09
+        </span></div>
+    </header>
+
+    <div class="post-content"><p>Disposable Object这个概念源自C#，它会实现IDisposable接口，从而实现一种释放Unmanaged Resources的机制。在C#里，Managed resources基本是指垃圾回收器管理的内存，Unmanaged Resources是指打开的文件、打开的网络链接等。</p>
+<p>JavaScript也是一门带有GC的语言，一般来说不太需要自行管理内存。但是由于异步编程是JavaScript开发的基本技术，和异步相关的Callback、闭包往往是前端应用内存泄漏的原因。被不当使用的Callback、闭包，对于垃圾管理器来说，实属Unmanaged Resources。对于这些需要被“回收”的内容，其实可以借用C#的IDisposable的概念，管理资源释放问题。</p>
+<p>IDisposable接口定义了dispose()方法，如下：<br><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> IDisposable &#123;</span><br><span class="line">    dispose(): <span class="built_in">void</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>往往在Disposable Object需要被销毁前，手工调用dispose()方法。</p>
+<p>在VSCode源码和PhosphorJS里面，IDisposable到处可见，有点不同的是，PhosphorJS的IDisposable会有disposed属性。VSCode源码里，和’Unmanaged Resources’，相关的对象/方法，都会返回IDisposable，用于释放资源。比如EventEmitter的事件监听回调设置、DOM元素的事件绑定等。</p>
+<p>实现IDisposable接口然后显式调用dispose()，这样虽然可行，但如果有C++的RAII机制，在对象从栈中销毁时，自动调用dispose()，会减少很多人为的错误。JavaScript的Class没有类似析构函数的概念，目前有一个相关的提案<a href="https://github.com/tc39/proposal-weakrefs/" target="_blank" rel="noopener">proposal-weakrefs</a>, 它提到了Finalization，可惜也是需要直接或者间接调用，并不像RAII那么方便。</p>
+
+        </div></article>
+      <article class="post">
+    <header class="post-header">
+      <h1 class="post-title"><a class="post-link" href="/foreground-and-active/">Foreground and Active</a>
+        </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2019-05-08
+        </span></div>
+    </header>
+
+    <div class="post-content"><p>最近收到一个需求，需要参（抄）考（袭）传统盯盘软件，当用户处于行情页面时，无需点击”输入代码“之类的<code>&lt;input&gt;</code>，只要在键盘按下一个键，就有一个股票代码搜索提示弹出来，供用户选中需要查看的股票。</p>
+<p>这样的需求分析一下，会发现有些麻烦，前端需要判断当前页面没有弹出的<code>&lt;prompt&gt;/&lt;confirm&gt;</code>，没有正在输入的<code>&lt;input&gt;/&lt;textarea&gt;</code>；换个说法是，前端需要判断当前用户交互的焦点，需要知道用户的确是在盯盘。</p>
+<p>HTML Standard 有个章节是讲 Focus 的，并且提供了一个相关的<code>document.activeElement</code>，利用这个API，可以知道用户正在交互的元素。但是现在的页面开发不是基于HTMLElement，而是基于某某框架的组件，问题是好像并没有哪个框架会提供<code>app.activeComponent</code>这样的API。</p>
+<p>传统的 Windows GUI 开发中，有两个概念——<code>foreground</code>和<code>active</code>。传统的窗口叠窗口模式里，很容易区分用户的交互焦点，因为最前面的就是<code>active</code>的；而<code>foreground</code>/<code>background</code>是和线程有关。在浏览器单线程世界里，任务的执行没有<code>foreground</code>/<code>background</code>之分，，但是UI里，是可以有<code>foreground</code>/<code>background</code>组件。比如，弹出的对话框，天猫右滑出来的购物车组建，对于整个页面来说，是<code>foreground</code>。我想，<code>z-index</code>是判断<code>foreground</code>/<code>background</code>的依据。然后像<code>&lt;input&gt;</code>，一般<code>z-index</code>不变，但用户可以通过鼠标点击，实现<code>focus</code>/<code>blur</code>，从而影响倒页面的活动元素。</p>
+<p>目前项目里的代码，只判断了<code>document.activeElement</code>这种情况，也就是只考虑了<code>active</code>，但是<code>foreground</code>是没有处理的，所以往后应该潜在的问题。</p>
+<p>今天稍微想了一下（顺便水一篇），对于比较大型的应用来说，需要一个<code>FocusTrackingService</code>。我本来想在<code>VSCode</code>源码里查查，发现他们的方案也是挺依赖原生的focus属性，也算一种方案吧。不过一种通用的和平台无关的设计，应该是，焦点是可以让渡的。比如支付宝密码数据，六位数字，显示成六个输入的格子，当前面一位输入完成后，后一位会自动聚焦。这样的组件如果用操作DOM元素的思路来做，input后blur前一个input然后focus下一个元素。显然，这样的写法相当底层，不太符合面向xx编程的原则。</p>
+<p>我会给需要可以焦点切换的组件，实现这样的interface<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">interface Focusable&#123;</span><br><span class="line">    deliverFocus(): void</span><br><span class="line">    acceptFocus(): void</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>其中，<code>deliverFocus()</code>是，当组件不需要focus时，自行让出焦点。比如说，对话框都会有<code>cancel()</code>和<code>dismiss()</code>，这两个方法对于其他组件来说，是让出焦点。应用内，应该需要有一个FocusTracker，跟踪当前聚焦的组件，以及计算让渡焦点后，下一个应该聚焦的组件（如果有的话）。下一个聚焦组件的<code>acceptFocus()</code>会由FocusTrackerz自动调用，从而实现支付宝密码输入时的切换效果。</p>
+
+        </div></article>
+      <article class="post">
+    <header class="post-header">
+      <h1 class="post-title"><a class="post-link" href="/hello/">第一篇</a>
+        </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2019-05-02
+        </span></div>
+    </header>
+
+    <div class="post-content"><p>搭了Hexo，开始写人生第一篇博。</p>
+<p>我一直没有日记周记月记年记写作习惯，高中语文老师要求的周记作业是我的一大噩梦，表达能力和理解能力一向很低的我，当年甚至有过作文不及格的经历。所以啊，挺佩服有些同学坚持写日记的习惯。</p>
+<p>今年已经28岁，什么过去的记录都没有呢。微信朋友圈也没有发过一条，空空的朋友圈在加好友时甚是尴尬，每次都要解释一下，不用说，第一印象一定是个怪人。</p>
+<p>我不是出世的高人，只是一个固执的胆小鬼。胆小的我，总是怕面对一个事实——我只是一个普通人，总想着自己现在有多少努力，会有多少成就，但是接受不了自己泯然众人。我有个洋洋得意的习惯——断舍离，把东西不断扔掉，好像这样就能脱胎换骨。是这样？好像不是，只是我害怕过去的我，害怕自己的历史，害怕在别人面前展示真实的我。</p>
+<p>躲躲藏藏这么多年，累了，脸皮也厚了，就到此吧。</p>
+
+        </div></article>
+      <nav class="pagination"><a class="prev" href="/page/2/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text">上一页</span>
+      </a>
+    </nav></section></div></div>
+      </main>
+
+      <footer id="footer" class="footer"><div class="social-links"><a href="mailto:wakiki@outlook.com" class="iconfont icon-email" title="email"></a>
+        <a href="https://github.com/waisiukei" class="iconfont icon-github" title="github"></a>
+        <a href="/atom.xml" class="iconfont icon-rss" title="rss"></a>
+    </div><div class="copyright">
+  <span class="copyright-year">&copy;2019 - 2020<span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">WaiSiuKei</span>
+  </span>
+</div>
+</footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div><script type="text/javascript" src="/lib/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/lib/pjax/jquery.pjax.min.js"></script>
+  <script type="text/javascript" src="/lib/nprogress/nprogress.min.js"></script>
+  <script type="text/javascript" src="/js/src/even.js?v=2.11.0"></script>
+</body>
+</html>
